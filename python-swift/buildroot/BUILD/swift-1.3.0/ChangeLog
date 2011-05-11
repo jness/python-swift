@@ -1,0 +1,5083 @@
+2011-04-15  Thierry Carrez  <thierry@openstack.org>
+
+	Final Cactus versioning. Please accept when you sign off the release.
+
+2011-04-14  Thierry Carrez  <thierry@openstack.org>
+
+	Final Cactus versioning
+
+2011-04-14  Thierry Carrez  <thierry@openstack.org>
+
+	Bump version to 1.3-rc
+
+2011-04-14  Thierry Carrez  <thierry@openstack.org>
+
+	Bump version to 1.3-rc
+
+2011-04-12  gholt  <gholt@rackspace.com>
+
+	Handle TimeoutErrors with a tpooled get_hashes
+
+2011-04-11  gholt  <gholt@rackspace.com>
+
+	Handle TimeoutErrors with a tpooled get_hashes
+
+2011-04-11  Greg Lange  <greglange@gmail.com>
+
+	Refactored the log processing daemon to make it more testable.
+	
+	Added tests for that.
+	
+	I shouldn't have changed how it worked at all.
+	
+	This needs to be tested on staging extensively before being pushed to production.
+
+2011-04-11  Greg Lange  <greglange@gmail.com>
+
+	added doc strings to new methods
+
+2011-03-31  Greg Lange  <greglange@gmail.com>
+
+	fixed merge conflict
+
+2011-03-24  Greg Lange  <greglange@gmail.com>
+
+	fixed test and pep8 problem
+
+2011-03-21  Greg Lange  <greglange@gmail.com>
+
+	fixed a mismerge
+
+2011-03-17  Greg Lange  <greglange@gmail.com>
+
+	Fixed test
+
+2011-03-17  Greg Lange  <greglange+launchpad@gmail.com>
+
+	Refactored and tested some of the log processing stuff
+
+2011-04-07  Michael Barton  <michael.barton@rackspace.com>
+
+	Make it so the proxy's _make_request method's error handler catches timeouts.
+
+2011-04-07  Michael Barton  <michael.barton@rackspace.com>
+
+	probably should not error limit on timeouts
+
+2011-04-07  Michael Barton  <michael.barton@rackspace.com>
+
+	Add timeout exceptions to the proxy _make_request error handler
+
+2011-04-01  gholt  <gholt@rackspace.com>
+
+	Now:
+	.super_admin may get any user info
+	.reseller_admin may not get .reseller_admin info
+	.admin may not get .reseller_admin or .admin info
+	users can't get any user info
+
+2011-04-01  gholt  <gholt@rackspace.com>
+
+	Now .super_admin may get any user info; .reseller_admin may not get .reseller_admin info, .admin may not get .reseller_admin or .admin info, users can't get any user info
+
+2011-04-01  gholt  <gholt@rackspace.com>
+
+	Fix to now allow reseller admins to see other reseller admin creds
+
+2011-04-01  gholt  <gholt@rackspace.com>
+
+	Fix .admin get_user privileges.
+
+2011-03-31  Michael Barton  <michael.barton@rackspace.com>
+
+	swift3 middleware missing content-type fix
+
+2011-03-31  Michael Barton  <michael.barton@rackspace.com>
+
+	messed up test
+
+2011-03-31  Michael Barton  <michael.barton@rackspace.com>
+
+	swift3 missing content type fix
+
+2011-03-30  Greg Lange  <greglange@gmail.com>
+
+	Added two command line options to bin/swift-log-stats-collector.
+
+2011-03-30  Greg Lange  <greglange@gmail.com>
+
+	changed None check to use not and is
+
+2011-03-30  Greg Lange  <greglange@gmail.com>
+
+	Added two command line options to bin/swift-log-stats-collector
+
+2011-03-30  Michael Barton  <michael.barton@rackspace.com>
+
+	Remove boto dependency by implementing request canonicalization logic in swift3 middleware.
+
+2011-03-30  Michael Barton  <michael.barton@rackspace.com>
+
+	refactor to use webob req
+
+2011-03-30  Michael Barton  <michael.barton@rackspace.com>
+
+	remove re import
+
+2011-03-30  Michael Barton  <michael.barton@rackspace.com>
+
+	move canonical_string logic into swift3 middleware
+
+2011-03-30  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed lockups and lost messages in swift-init and capture_stdio
+
+2011-03-30  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed lockups and lost messages in swift-init and capture_stdio
+
+2011-03-29  David Goetz  <david.goetz@rackspace.com>
+
+	Check the md5sum against metadata ETag on object GETs, and zero byte checks on GETs, HEADs, and POSTs.
+
+2011-03-28  David Goetz  <david.goetz@rackspace.com>
+
+	make executable
+
+2011-03-28  David Goetz  <david.goetz@rackspace.com>
+
+	merge to trunk conflicts
+
+2011-03-28  David Goetz  <david.goetz@rackspace.com>
+
+	peer review changes
+
+2011-03-24  David Goetz  <david.goetz@rackspace.com>
+
+	adding reset flags
+
+2011-03-23  David Goetz  <david.goetz@rackspace.com>
+
+	merge to trunk
+
+2011-03-16  David Goetz  <david.goetz@rackspace.com>
+
+	pep8
+
+2011-03-16  David Goetz  <david.goetz@rackspace.com>
+
+	up to trunk
+
+2011-03-16  David Goetz  <david.goetz@rackspace.com>
+
+	change ite logic and add more tests
+
+2011-03-15  David Goetz  <david.goetz@rackspace.com>
+
+	merging to trunk
+
+2011-03-15  David Goetz  <david.goetz@rackspace.com>
+
+	unittests workng and added probe test
+
+2011-03-10  David Goetz  <david.goetz@rackspace.com>
+
+	refactor the quarantine
+
+2011-03-29  David Goetz  <david.goetz@rackspace.com>
+
+	changing /usr/bin/python to /usr/bin/env python in bins
+
+2011-03-24  David Goetz  <david.goetz@rackspace.com>
+
+	getting rid of -u stuff
+
+2011-03-24  David Goetz  <david.goetz@rackspace.com>
+
+	changing /usr/bin/python to /usr/bin/env python
+
+2011-03-26  gholt  <gholt@rackspace.com>
+
+	Static web filter middleware.
+
+2011-03-25  gholt  <gholt@rackspace.com>
+
+	A bit more unit tests.
+
+2011-03-25  gholt  <gholt@rackspace.com>
+
+	Specific unit test for previous bugfix
+
+2011-03-25  gholt  <gholt@rackspace.com>
+
+	Bug fix for subpath redirects
+
+2011-03-25  gholt  <gholt@rackspace.com>
+
+	Made the link to the custom listings css relative since the request could have had its path modified several times between the end remote client and staticweb
+
+2011-03-25  gholt  <gholt@rackspace.com>
+
+	pep8 and doc updates
+
+2011-03-25  gholt  <gholt@rackspace.com>
+
+	Added logging
+
+2011-03-24  gholt  <gholt@rackspace.com>
+
+	More bugfixes found by letterj
+
+2011-03-24  gholt  <gholt@rackspace.com>
+
+	Updated sample conf
+
+2011-03-24  gholt  <gholt@rackspace.com>
+
+	Updated func tests and made swauth .rlistings check a bit easier to read
+
+2011-03-24  gholt  <gholt@rackspace.com>
+
+	Changing some semantics and defaults; .r:* listings are off by default now and .rlistings turn them on; new x-container-meta-web-listings header to turn webmode listings on/off (off by default)
+
+2011-03-24  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2011-03-24  gholt  <gholt@rackspace.com>
+
+	Typo in docs
+
+2011-03-24  gholt  <gholt@rackspace.com>
+
+	Tests; bug fixes
+
+2011-03-24  gholt  <gholt@rackspace.com>
+
+	Update from feedback; docs
+
+2011-03-18  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2011-02-19  gholt  <gholt@rackspace.com>
+
+	staticweb: added a todo
+
+2011-02-19  gholt  <gholt@rackspace.com>
+
+	staticweb: work in progress
+
+2011-02-18  gholt  <gholt@rackspace.com>
+
+	staticweb: Reallow direct container listings
+
+2011-02-18  gholt  <gholt@rackspace.com>
+
+	Working staticweb filter
+
+2011-03-24  Michael Barton  <michael.barton@rackspace.com>
+
+	refactor obj-rep a bit and move local hash recalculation to before rsync
+
+2011-03-20  Michael Barton  <michael.barton@rackspace.com>
+
+	refactor obj-rep a bit and move hash recalculate to before rsync step
+
+2011-03-24  John Dickinson  <john.dickinson@rackspace.com>
+
+	added default support for content-disposition and allows x-object-manifest to be manipulated like any other object metadata header
+
+2011-03-24  John Dickinson  <john.dickinson@rackspace.com>
+
+	added default support for content-disposition and allows x-object-manifest to be manipulated like any other object metadata header
+
+2011-03-24  John Dickinson  <john.dickinson@rackspace.com>
+
+	provides arbitrary metadata header support for objects
+
+2011-03-24  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed location of a test
+
+2011-03-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	explicitly strip disallowed headers from the config
+
+2011-03-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	simplified header key lookup
+
+2011-03-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	objects can now have arbitrary headers set in metadata that will be served back when they are fetched
+
+2011-03-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	now can delete content-encoding if it was set at object creation
+
+2011-03-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed object POST so content encoding can be set and deleted
+
+2011-03-17  John Dickinson  <john.dickinson@rackspace.com>
+
+	makes the query parameter parsing explicit in the access log parser
+
+2011-03-17  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed tests
+
+2011-03-17  John Dickinson  <john.dickinson@rackspace.com>
+
+	whitelist valid query params to count for stats
+
+2011-03-16  gholt  <gholt@rackspace.com>
+
+	New index code for the dbs; should improve performance for containers with a lot of recent deletes.
+
+2011-03-11  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2011-03-08  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2011-03-03  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2011-03-03  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2011-02-21  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2011-02-18  gholt  <gholt@rackspace.com>
+
+	Possibly speed improvement on existence-select
+
+2011-02-18  gholt  <gholt@rackspace.com>
+
+	Updated new index code
+
+2011-02-18  gholt  <gholt@rackspace.com>
+
+	Readd new index changes
+
+2011-03-16  gholt  <gholt@rackspace.com>
+
+	Fix for incorrect use of urlparse results in swauth bins
+
+2011-03-11  gholt  <gholt@rackspace.com>
+
+	Fix for incorrect use of urlparse results in swauth bins
+
+2011-03-15  gholt  <gholt@rackspace.com>
+
+	Remove DevAuth
+
+2011-03-14  gholt  <gholt@rackspace.com>
+
+	Fixes with removing DevAuth
+
+2011-03-14  gholt  <gholt@rackspace.com>
+
+	Removing DevAuth
+
+2011-03-15  gholt  <gholt@rackspace.com>
+
+	Fixed an import that was causing Connection to not retry on HTTPExceptions.
+
+2011-03-15  gholt  <gholt@rackspace.com>
+
+	Fix incorrect import
+
+2011-03-15  Chuck Thier  <cthier@gmail.com>
+
+	Adds documentation how to the SAIO on how to setup rsyslog to have separate logs for each node
+
+2011-03-15  Chuck Thier  <cthier@gmail.com>
+
+	added cleaning up of logs in resetswift for saio
+
+2011-03-03  Chuck Thier  <cthier@gmail.com>
+
+	merged trunk to fix conflict
+
+2011-03-03  Chuck Thier  <cthier@gmail.com>
+
+	Updated user to be in the adm group and chmod the log dirs so that the processing will work correctly
+
+2011-02-15  Chuck Thier  <cthier@gmail.com>
+
+	Fixed a typo, and made restarting consistent
+
+2011-02-14  Chuck Thier  <cthier@gmail.com>
+
+	Added logging for stats processing
+
+2011-02-07  Chuck Thier  <cthier@gmail.com>
+
+	Added a catch all log, and cleaned up a bit
+
+2011-02-04  Chuck Thier  <cthier@gmail.com>
+
+	Added rsyslog setup docs for SAIO
+
+2011-03-15  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: add get acl object and bucket support
+	
+	A simple response that gives the owner to FULL_CONTROL always returns
+	because Swift doesn't support a fine acl.
+	
+	This also adds get acl unit tests.
+
+2011-03-07  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: add acl get unit tests
+
+2011-03-07  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: add get acl object and bucket support
+	
+	A simple response that gives the owner to FULL_CONTROL always returns
+	because Swift doesn't support a fine acl.
+
+2011-03-15  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: fix PUT Object Copy
+
+2011-03-06  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: fix PUT Object Copy unit test
+
+2011-02-23  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: fix PUT Object Copy
+
+2011-03-15  Greg Lange  <glange@rackspace.com>
+
+	Fixes problem with creating a new processed files list in log processing when the download of that file fails.
+
+2011-02-25  Greg Lange  <glange@rackspace.com>
+
+	processed files list in log processing will now only be created if a 404 is returned on failed download
+
+2011-03-14  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	rename var
+
+2011-03-14  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	rename var
+
+2011-03-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed pattern matching/globbing in swift-log-uploader
+
+2011-03-11  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	removed old comment
+
+2011-03-11  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed pattern matching/globbing in swift-log-uploader
+
+2011-03-11  Anne Gentle  <anne@openstack.org>
+
+	Added an info box to each page that contains links to the 1.1 and 1.2 docs sites. 
+
+2011-03-09  Anne Gentle  <anne@openstack.org>
+
+	Adding a box to each page that gives readers links to 1.1 and 1.2 Swift docs sites
+
+2011-03-10  gholt  <gholt@rackspace.com>
+
+	Fixes to work with WebOb 1.0.1 and WebOb 1.0.3
+
+2011-03-10  gholt  <gholt@rackspace.com>
+
+	Fixes to work with WebOb 1.0.1 and WebOb 1.0.3
+
+2011-03-08  David Goetz  <david.goetz@rackspace.com>
+
+	Fix for object auditor invalidate hashes location bug
+
+2011-03-07  David Goetz  <david.goetz@rackspace.com>
+
+	fix for object auditor invalidate hashes bug
+
+2011-03-08  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fix ring hash check fix in obj replicator tests.
+
+2011-03-08  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fix ring hash check fix in obj replicator tests
+
+2011-03-08  Anne Gentle  <anne@openstack.org>
+
+	Modifying the multi-node install to fix a bug reported (700894) and to put in changes based on feedback from Russell Nelson.
+
+2011-03-04  Anne Gentle  <anne@openstack.org>
+
+	Fixes separate IP address for auth on multinode install plus adds some scripting touches
+
+2011-03-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	change internal proxy to make calls to handle_request with a copy of the request rather than the request itself
+
+2011-03-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	better handling of internal_proxy.get_container_list response in log_processor
+
+2011-03-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	improved internal proxy tests and changed internal_proxy.get_container_list
+
+2011-03-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	renamed internal proxy test method
+
+2011-03-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	cleaned up internal proxy tests
+
+2011-03-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	streamlined internal_proxy
+
+2011-03-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	improved internal proxy tests
+
+2011-02-28  John Dickinson  <john.dickinson@rackspace.com>
+
+	added tests for internal proxy and updated internal proxy retries
+
+2011-02-25  John Dickinson  <john.dickinson@rackspace.com>
+
+	internal_proxy handles retries better
+
+2011-03-03  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	update functional tests configuration
+
+2011-02-25  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	consistant hasattr in readconf
+
+2011-02-24  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	PEP8
+
+2011-02-24  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	went ahead and spoofed a [func_test] section
+
+2011-02-24  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	better error messages on missing/malformed configs
+
+2011-02-23  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	made functionalnosetests works with no account usernames
+
+2011-02-22  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	i need to pull in the changes to functionalnosetest/swift_testing.py
+
+2011-02-22  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	made functional tests more configurable
+	
+	SWIFT_TEST_CONFIG_FILE can redirect both functional test suites to any conf
+	functional tests that don't require a account:username can now work with only
+	username for auth systems that don't support the account/namespace concept
+
+2011-03-03  Michael Barton  <michael.barton@rackspace.com>
+
+	Add a "Getting Swift" section to the getting started doc
+
+2011-03-01  Michael Barton  <michael.barton@rackspace.com>
+
+	Add a "getting swift" section to the getting started doc
+
+2011-03-03  David Goetz  <david.goetz@rackspace.com>
+
+	Ability to fasttrack auditing of zero byte files.
+
+2011-03-03  David Goetz  <david.goetz@rackspace.com>
+
+	merge to trunk
+
+2011-02-28  David Goetz  <david.goetz@rackspace.com>
+
+	get rid of logger
+
+2011-02-25  David Goetz  <david.goetz@rackspace.com>
+
+	peer review edits
+
+2011-02-24  David Goetz  <david.goetz@rackspace.com>
+
+	fixing the run_forever and unit tests
+
+2011-02-21  David Goetz  <david.goetz@rackspace.com>
+
+	simplifying options and code
+
+2011-02-21  David Goetz  <david.goetz@rackspace.com>
+
+	merge to trunk
+
+2011-02-14  David Goetz  <david.goetz@rackspace.com>
+
+	pep8
+
+2011-02-14  David Goetz  <david.goetz@rackspace.com>
+
+	stupid comment
+
+2011-02-14  David Goetz  <david.goetz@rackspace.com>
+
+	refactor daemons with args/kwargs
+
+2011-02-14  David Goetz  <david.goetz@rackspace.com>
+
+	forgot log-uploader change
+
+2011-02-14  David Goetz  <david.goetz@rackspace.com>
+
+	audit zero byte files quickly without true value
+
+2011-03-03  Michael Barton  <michael.barton@rackspace.com>
+
+	Refactor proxy for concurrency and code reuse
+
+2011-03-03  Michael Barton  <michael.barton@rackspace.com>
+
+	recommended doc changes
+
+2011-03-03  Michael Barton  <michael.barton@rackspace.com>
+
+	trunk merge
+
+2011-03-02  Michael Barton  <michael.barton@rackspace.com>
+
+	remove offending probe checks
+
+2011-03-02  Michael Barton  <michael.barton@rackspace.com>
+
+	trunk merge
+
+2011-02-24  Michael Barton  <michael.barton@rackspace.com>
+
+	fixes
+
+2011-02-24  Michael Barton  <michael.barton@rackspace.com>
+
+	small refactors
+
+2011-02-24  Michael Barton  <michael.barton@rackspace.com>
+
+	fix loggin
+
+2011-02-24  Michael Barton  <michael.barton@rackspace.com>
+
+	merge trunk
+
+2011-01-31  Michael Barton  <michael.barton@rackspace.com>
+
+	tweaks
+
+2011-01-31  Michael Barton  <michael.barton@rackspace.com>
+
+	trunk merge
+
+2011-01-19  Michael Barton  <michael.barton@rackspace.com>
+
+	trunk merge
+
+2011-01-19  Michael Barton  <michael.barton@rackspace.com>
+
+	merge trunk
+
+2011-01-19  Michael Barton  <michael.barton@rackspace.com>
+
+	concurrent object PUT connections
+
+2011-01-19  Michael Barton  <michael.barton@rackspace.com>
+
+	error_limited refactor
+
+2011-01-19  Michael Barton  <michael.barton@rackspace.com>
+
+	make_requests refactor
+
+2011-01-19  Michael Barton  <michael.barton@rackspace.com>
+
+	bug fixes in concurrency
+
+2011-01-19  Michael Barton  <michael.barton@rackspace.com>
+
+	concurrent object PUT streaming
+
+2011-01-16  Michael Barton  <michael.barton@rackspace.com>
+
+	proxy refactor
+
+2011-03-03  Chuck Thier  <cthier@gmail.com>
+
+	Skip the swift3 middleware tests if boto is not installed (since it is an optional component)
+
+2011-03-03  Chuck Thier  <cthier@gmail.com>
+
+	heh
+
+2011-03-03  Chuck Thier  <cthier@gmail.com>
+
+	Swift3 tests will now skip if boto is not installed
+
+2011-03-03  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: use boto to get canonical string for signature
+	
+	Replace the homegrown function to get a canonical string for signature.
+
+2011-03-01  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: move boto dependency descriptions to swift3.py
+
+2011-02-23  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	update docs about python-boto dependency
+
+2011-02-23  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: use boto to get canonical string for signature
+	
+	Replace the homegrown function to get a canonical string for
+	signature.
+
+2011-03-01  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed edge case when log processor cannot get a log file for processing
+
+2011-02-25  John Dickinson  <john.dickinson@rackspace.com>
+
+	removed processed_files fix to allow it to be in its own branch and worked on separately
+
+2011-02-25  Greg Lange  <glange@rackspace.com>
+
+	reverts changes in my last merge request for lp707549
+
+2011-02-24  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with greg lange's improvements
+
+2011-02-24  Greg Lange  <glange@rackspace.com>
+
+	fixed problem with how processed files list download failures are handled
+
+2011-02-16  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged test improvements from clayg
+
+2011-02-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fix log_processor tests
+
+2011-02-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed edge case when log processor cannot get a log file for processing
+
+2011-02-28  Michael Barton  <michael.barton@rackspace.com>
+
+	small doc fix
+
+2011-02-28  Michael Barton  <michael.barton@rackspace.com>
+
+	doc fix
+
+2011-02-28  David Goetz  <david.goetz@rackspace.com>
+
+	lower memcached error limit duration.
+
+2011-02-28  David Goetz  <david.goetz@rackspace.com>
+
+	lower memcache error limit duration
+
+2011-02-24  David Goetz  <david.goetz@rackspace.com>
+
+	ratelimiting does not handle memcache restart
+
+2011-02-23  David Goetz  <david.goetz@rackspace.com>
+
+	ratelimiting does not handle memcache restart
+
+2011-02-22  David Goetz  <david.goetz@rackspace.com>
+
+	nodes with a weight of zero should not be valid for handoff
+
+2011-02-16  David Goetz  <david.goetz@rackspace.com>
+
+	merge up to trunk
+
+2011-02-09  David Goetz  <david.goetz@rackspace.com>
+
+	do not return devs with weight zero in get_more_nodes
+
+2011-02-21  gholt  <gholt@rackspace.com>
+
+	Reverted the wal+index code.
+
+2011-02-17  gholt  <gholt@rackspace.com>
+
+	Revert wal+index
+
+2011-02-17  gholt  <gholt@rackspace.com>
+
+	Make swift-auth-to-swauth work with really old devauth dbs.
+	Update swauth to accept non-alnum chars in account and user names.
+
+2011-02-11  gholt  <gholt@rackspace.com>
+
+	Make swift-auth-to-swauth work with really old devauth dbs; update swauth to accept non-alnum chars in account and user names.
+
+2011-02-17  gholt  <gholt@rackspace.com>
+
+	ring: pickles now use only stdlib objects; old and really old pickles can still be read
+
+2011-02-15  gholt  <gholt@rackspace.com>
+
+	ring: pickles now use only stdlib objects; old and really old pickles can still be read
+
+2011-02-17  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed glob pattern matching index offset error in stats' LogUploader
+
+2011-02-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	pep8
+
+2011-02-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed glob pattern matching index offset error in stats' LogUploader
+
+2011-02-17  Michael Barton  <michael.barton@rackspace.com>
+
+	rename log-processing.conf to log-processor.conf
+
+2011-02-17  Michael Barton  <michael.barton@rackspace.com>
+
+	rename log-processing to log-processor
+
+2011-02-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	I rewrote swift-init cause I wanted it to do somethings it didn't, and I
+	tried to make some of the error conditions a little better too.  It has
+	some new features, but overall it's behavior is mostly compatible with
+	the old swift-init (input, return codes) - but if someone had some weird
+	greps on the output they're hozed.
+	
+	swift-init --help is a good place to start
+	
+	some highlights might be:
+	$swift-init start main --wait  # wait for all "main" services to start,
+	printing any errors to console
+	$swift-init rest wait  # same as above but for replicators, updaters & auditors
+	$swift-init stop object -c1  # kill the first object-server "node"
+	$swift-init object-server status  # make sure it's dead - yay status!
+	$swift-init proxy auth reload  # devauth?  srsly?
+	$swift-init *-replicator once -n  # run the object, container,
+	and account replicators in "once mode" and watch them log to console
+	until they're finished
+	
+	... probably some other stuff too.  Looking forward to feedback...
+
+2011-02-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	mermged upstream changes
+
+2011-02-15  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed tests for new wait default true
+
+2011-02-15  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	wait is on by default
+
+2011-02-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added [options] to command usage
+
+2011-02-14  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	redbo says we should capture stdio later
+
+2011-02-14  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	i18n
+
+2011-02-14  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	review cleanup
+
+2011-02-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	more tests and cleanup
+
+2011-02-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	renamed ini_files to conf_files in code
+
+2011-02-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	reworked bin/swift-init
+
+2011-02-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	reworked bin/swift-init
+
+2011-02-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	PEP8
+
+2011-02-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed license dates
+
+2011-02-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged trunk
+
+2011-02-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	more test, swift.common.manager coverage > 90%
+
+2011-02-11  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	working on tests
+
+2011-02-11  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	forgot some new files
+
+2011-02-11  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	Prepare for trunk merge.
+	
+	Refactored some of the swift_init classes into a new module in
+	swift.common, changed some names.  Removed the bin test stuff.  Fixed
+	some bugs, added some features.
+
+2011-01-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	more tests, still slow going
+
+2010-12-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	good start on TestSwiftInitClass
+
+2010-12-09  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	mostly finished SwiftServer tests, needs some cleanup
+
+2010-12-08  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	finished tests for wait
+
+2010-12-07  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	finished test_spawn, started test_wait
+
+2010-12-06  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged trunk
+
+2010-11-24  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged upstream
+
+2010-11-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	started work on new tests
+
+2010-11-24  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged trunk
+
+2010-11-24  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	new test for status; pep8; moved capture std.out to inside temptree
+
+2010-11-18  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	made existing tests more literal/readable/useful
+
+2010-11-17  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	refactored swift-init to be more maintainable, added some features,
+	help, docs, tests, fixed lp:639710; new bin/test module with examples of
+	how to import files from bin and some stubs for swift-init
+
+2011-02-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	creating a Ring will ensure a valid HASH_PATH_SUFFIX
+
+2011-02-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	creating a Ring will ensure a valid HASH_PATH_SUFFIX
+	
+	To make sure that node lookups match what the servers return the generated
+	hashes need to match.  All the utils that use the ring should validate their
+	HASH_PATH_SUFFIX.
+
+2011-02-14  Devin Carlen  <devin.carlen@gmail.com>
+
+	Added lock file configuration to sample rsync.conf.
+
+2011-02-12  Devin Carlen  <devin.carlen@gmail.com>
+
+	Added missing lockfile configuration to sample rsync.conf
+
+2011-02-11  Michael Barton  <michael.barton@rackspace.com>
+
+	Changes to support deployment on IPv6
+
+2011-02-03  Michael Barton  <michael.barton@rackspace.com>
+
+	random newline
+
+2011-02-03  Michael Barton  <michael.barton@rackspace.com>
+
+	update all ring-builder grammars
+
+2011-02-03  Michael Barton  <michael.barton@rackspace.com>
+
+	merge trunk
+
+2011-01-29  Michael Barton  <michael.barton@rackspace.com>
+
+	merge trunk
+
+2011-01-16  Michael Barton  <mike-launchpad@weirdlooking.com>
+
+	ipv6 support
+
+2011-02-11  gholt  <gholt@rackspace.com>
+
+	logging: use routes to separate logging configurations
+
+2011-02-10  gholt  <gholt@rackspace.com>
+
+	PEP8 Fixes
+
+2011-02-10  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2011-02-10  gholt  <gholt@rackspace.com>
+
+	Merge from ~clay-gerrard/swift/logroutes
+
+2011-02-10  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	slightly more consistant stats process log names
+	
+	Also a quick fix to the auditor tests xattr mock
+
+2011-02-10  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged logroutes
+
+2011-02-10  gholt  <gholt@rackspace.com>
+
+	Fix drive-audit's default log_name
+
+2011-02-09  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2011-02-02  gholt  <gholt@rackspace.com>
+
+	logging: use routes to separate logging configurations
+
+2011-02-10  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	cleaned up logging and added new optional proxy access_logger with it's own configuration options that default to default proxy logger's settings.
+
+2011-02-10  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	cleaned up some comments
+
+2011-02-10  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	updated proxy-server.conf-sample to include access_log_* defaults
+
+2011-02-10  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	logging refactor to support proxy access logs
+	
+	New log level "notice" set to python log level 25 maps to syslog priority
+	LOG_NOTICE.  Used for some messages in the proxy server, but will be available
+	to all apps using the LogAdapter returned from get_logger.  Cleaned up some
+	code in get_logger so that console logging works with log_routes and removed
+	some unneeded bits.  NamedFormatter functionality was split between LogAdapter
+	(which now inherits from logging.LoggerAdapter) and TxnFormatter (which now is
+	only responsible for adding the log records txn_id).
+	
+	The proxy server app now configures a separate logger for access line logging.
+	By default it will use the same settings as the regular proxy logger.
+
+2011-02-09  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged trunk
+
+2011-02-05  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added new proxy-server configuration options for access_log_facility and
+	access_log_name
+
+2011-02-03  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	Moved proxy server access log messages into their own log level
+	
+	Added new "access" log level available on swift loggers that will be routed to
+	the LOG_NOTICE priority in syslog for easy redirection of access log messages
+	via rsyslog and syslog-ng.
+
+2011-02-03  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	moved warning messages out of proxy.logger.info
+	
+	A few warning/client error messages were useing the .info log level which we
+	reserve for access logs.  They were changed to warnings.
+
+2011-02-10  Chuck Thier  <cthier@gmail.com>
+
+	Updates the debian packaging docs with the python-netifaces dependency
+
+2011-02-10  Chuck Thier  <cthier@gmail.com>
+
+	Adding python-netifaces to dependencies for packaging docs
+
+2011-02-09  Michael Barton  <michael.barton@rackspace.com>
+
+	Use sqlite's new WAL mechanism as a replacement for .pending files.
+
+2011-02-04  Michael Barton  <michael.barton@rackspace.com>
+
+	merge trunk
+
+2011-02-04  Michael Barton  <michael.barton@rackspace.com>
+
+	merge walindx
+
+2011-02-04  gholt  <gholt@rackspace.com>
+
+	Fix account db change
+
+2011-02-04  gholt  <gholt@rackspace.com>
+
+	Move db version resolution to its own function
+
+2011-02-04  gholt  <gholt@rackspace.com>
+
+	Indexing and integrity changes in dbs.
+
+2011-01-29  Michael Barton  <michael.barton@rackspace.com>
+
+	remove pending_timeout references
+
+2011-01-29  Michael Barton  <michael.barton@rackspace.com>
+
+	refactor db open retry loop slightly
+
+2011-01-29  Michael Barton  <michael.barton@rackspace.com>
+
+	replication fixes for WAL
+
+2011-01-29  Michael Barton  <michael.barton@rackspace.com>
+
+	increase WAL autocheckpoint
+
+2011-01-29  Michael Barton  <michael.barton@rackspace.com>
+
+	retry connect refactor
+
+2011-01-29  Michael Barton  <michael.barton@rackspace.com>
+
+	support WAL journaling instead of .pending files
+
+2011-02-08  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fix st <command> --help hangs
+
+2011-02-04  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fix st command help hangs
+	
+	Before running the command function global the main func would start the
+	print and error queues.  Inside the command function the the option
+	parser would see the the help option, print the help text, and raise
+	SystemExit, which wasn't getting caught.
+
+2011-02-03  Chuck Thier  <cthier@gmail.com>
+
+	Update version to 1.3-dev
+
+2011-02-03  Chuck Thier  <cthier@gmail.com>
+
+	Updating version to 1.3-dev
+
+2011-02-02  Chuck Thier  <cthier@gmail.com>
+
+	Bumping version to 1.2.0 in preparation for release
+
+2011-02-02  Chuck Thier  <cthier@gmail.com>
+
+	Bumping version to 1.2.0 in preparation for release
+
+2011-02-02  gholt  <gholt@rackspace.com>
+
+	Fix duplicate logging
+
+2011-02-02  gholt  <gholt@rackspace.com>
+
+	logging: Remove old handler before installing a new handler
+
+2011-02-02  gholt  <gholt@rackspace.com>
+
+	Make swauth only log requests it handles
+
+2011-02-02  gholt  <gholt@rackspace.com>
+
+	Fix duplicate logging
+
+2011-02-01  Jay Payne  <letterj@racklabs.com>
+
+	
+	Fixed the get_accounts listing in client.py to handle 10K+ containers.   
+	
+	Tested with stats-report -d
+	Queried 13103 containers for dispersion reporting, 2m, 0 retries
+	There were 302 overlapping partitions
+	There were 9635 partitions missing one copy.
+	74.91% of container copies found (28768 of 38403)
+	Sample represents 4.88% of the container partition space
+
+2011-01-29  Jay Payne  <letterj@racklabs.com>
+
+	listing is a tuple correcting reference rv[1]
+
+2011-02-01  Chuck Thier  <cthier@gmail.com>
+
+	Bump version to 1.2-rc
+
+2011-02-01  Chuck Thier  <cthier@gmail.com>
+
+	Bumping version to 1.2-rc
+
+2011-01-31  John Dickinson  <john.dickinson@rackspace.com>
+
+	removed extra import in account stats logger
+
+2011-01-30  John Dickinson  <john.dickinson@rackspace.com>
+
+	removed extra import in account stats logger
+
+2011-01-28  Chuck Thier  <cthier@gmail.com>
+
+	Updating version to indicate gamma release
+
+2011-01-28  Chuck Thier  <cthier@gmail.com>
+
+	Changing version to add gamma
+
+2011-01-28  Jay Payne  <letterj@racklabs.com>
+
+	Simple change to the swift-auth-to-swauth utility to only list out the commands for converting accounts to from auth to swauth.
+	
+	A later fix would be to actually run the commands on the new swauth server.
+
+2011-01-27  Jay Payne  <letterj@racklabs.com>
+
+	Commit out the both calls
+
+2011-01-27  Michael Barton  <michael.barton@rackspace.com>
+
+	bump up some rsync time limits and make rsync log to error when it gets a bad return code
+
+2011-01-27  Michael Barton  <michael.barton@rackspace.com>
+
+	fix typo
+
+2011-01-27  Michael Barton  <michael.barton@rackspace.com>
+
+	object replicator logging and increase rsync timeouts
+
+2011-01-27  Michael Barton  <michael.barton@rackspace.com>
+
+	add pybabel setup.py commands and initial .pot
+
+2011-01-27  Michael Barton  <michael.barton@rackspace.com>
+
+	refactor setup.py
+
+2011-01-27  Michael Barton  <michael.barton@rackspace.com>
+
+	add pybabel setup.py commands and initial .pot
+
+2011-01-26  David Goetz  <david.goetz@rackspace.com>
+
+	Removing bare excepts from code.
+
+2011-01-26  David Goetz  <david.goetz@rackspace.com>
+
+	merge to trunk
+
+2011-01-26  David Goetz  <david.goetz@rackspace.com>
+
+	removing blank excepts
+
+2011-01-26  gholt  <gholt@rackspace.com>
+
+	container-updater: temporary account update suppression on errors
+
+2011-01-25  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2011-01-25  gholt  <gholt@rackspace.com>
+
+	Update to load suppressions from both os.wait points
+
+2011-01-24  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2011-01-22  gholt  <gholt@rackspace.com>
+
+	Doc update
+
+2011-01-21  gholt  <gholt@rackspace.com>
+
+	container-updater: temporrar account update suppression on errors
+
+2011-01-25  Chuck Thier  <cthier@gmail.com>
+
+	Bumping version to 1.2.0 in prep for Bexar release, and updated AUTHORS file
+
+2011-01-25  Chuck Thier  <cthier@gmail.com>
+
+	Bumped version to 1.2 to get ready for release, and updated the AUTHORS file
+
+2011-01-25  gholt  <gholt@rackspace.com>
+
+	Fix tests to cleanup their /tmp dirs
+
+2011-01-24  gholt  <gholt@rackspace.com>
+
+	Fix tests to cleanup their /tmp dirs
+
+2011-01-25  gholt  <gholt@rackspace.com>
+
+	pep8 and i18n fixes
+
+2011-01-24  gholt  <gholt@rackspace.com>
+
+	pep8 and i18n fixes
+
+2011-01-25  gholt  <gholt@rackspace.com>
+
+	s3 compat additions for swauth
+
+2011-01-24  gholt  <gholt@rackspace.com>
+
+	swauth: log s3 in place of token when in use; changed a couple GETs to HEADs; pep8
+
+2011-01-19  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	swauth: pep8 fixes
+
+2011-01-19  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	swauth: update the unit tests for s3api changes
+
+2011-01-19  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	swauth: add s3api support
+	
+	This changes handle_put_user() to put 'x-object-meta-account-id' to a
+	user object. The metadata includes an cfaccount like
+	x-container-meta-account-id.
+	
+	The above enables swauth to avoid issuing two HTTP requests per single
+	S3 request, that is, swauth get the password and cfaccount from the
+	account and user by issuing 'GET /v1/(auth_account)/(account)/(user)'
+	
+	If swauth can't get 'x-object-meta-account-id' metadata from a user
+	object (the existing user objects), it issues 'GET
+	/v1/(auth_account)/(account)' to get the cfaccount.
+
+2011-01-24  Chris Wedgwood  <cw@f00f.org>
+
+	Trivial output tweaks.
+
+2011-01-24  Chris Wedgwood  <cw@f00f.org>
+
+	Show account names in output strings.
+	
+	This helps when the output comes from concurrent workers doing the
+	checking as it's not strictly ordered.
+
+2011-01-24  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	The default reseller_prefix in swift is "AUTH". The domain_remap feature fails in this case because browsers tend to convert urls to lowercase and so by the time the remapped url reaches proxy-server, it is not correct and the request fails.
+	
+	Changed the code so that if the account starts with the wrongly cased version of reseller prefix, it is corrected. reseller_prefix read from proxy-server.conf.
+
+2011-01-24  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	fix small typo in domain_remap docs
+
+2011-01-24  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	Merged lp:~notmyname/swift/domain_remap_prefix_case
+	changed domain_remap to use an exclusive list in reseller_prefixes. added tests
+
+2011-01-24  John Dickinson  <john.dickinson@rackspace.com>
+
+	changed domain_remap to use an exclusive list in reseller_prefixes. added tests
+
+2011-01-21  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	update proxy-server.conf-sample for domain_remap reseller prefix list
+
+2011-01-21  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	changed domain_remap to handle multiple reseller prefixes
+
+2011-01-20  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	Wrapped long line
+
+2011-01-20  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	Check account starts with correct case version of reseller_prefix.
+
+2011-01-24  gholt  <gholt@rackspace.com>
+
+	In-depth documentation on paste.deploy configuration files.
+	get_logger now uses python's log routing to separate multiple log_names and log_facilities in the same process.
+
+2011-01-23  gholt  <gholt@rackspace.com>
+
+	More doc updates for logger stuff
+
+2011-01-23  gholt  <gholt@rackspace.com>
+
+	get_logger now separates different log_levels
+
+2011-01-23  gholt  <gholt@rackspace.com>
+
+	get_logger now uses python's log routing to separate multiple log_names in the same process
+
+2011-01-23  gholt  <gholt@rackspace.com>
+
+	Remove the misleading "Always"
+
+2011-01-23  gholt  <gholt@rackspace.com>
+
+	In-depth documentation on paste.deploy configuration files
+
+2011-01-24  David Goetz  <david.goetz@rackspace.com>
+
+	Fix rate limiting (middleware and util function) to allow for catch up.  Configurable logging in auditor. Docs.
+
+2011-01-21  David Goetz  <david.goetz@rackspace.com>
+
+	fix unit test
+
+2011-01-21  David Goetz  <david.goetz@rackspace.com>
+
+	fixes after code walk through
+
+2011-01-20  David Goetz  <david.goetz@rackspace.com>
+
+	pep8
+
+2011-01-20  David Goetz  <david.goetz@rackspace.com>
+
+	fixing rate limiting to allow for catch up
+
+2011-01-21  Chris Wedgwood  <cw@f00f.org>
+
+	Fixes to get audit to run cleanly over datasets where people have i18n strings (ie. bit 7 set utf-8 bytes) in container and object names.
+	
+	Arguably these fixes aren't the most elegant or complete, but for now it suffices to get things working until we re-factor things later.
+	
+	
+	Also tweak output from  foo... to "foo" (so cut & paste works a little better).
+
+2011-01-20  Chris Wedgwood  <cw@f00f.org>
+
+	Additional utf-8 encoding fixes to deal with containers.
+
+2011-01-20  Chris Wedgwood  <cw@f00f.org>
+
+	Make sure we pass strings correctly to functions that will behave
+	badly otherwise (fix suggested by Chuck Thier).
+	
+	Tweak account & container name output slightly (makes cut & paste
+	easier).
+
+2011-01-21  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	During a CNAME lookup, exception NXDOMAIN isn't caught by the check for DNSException, so need to also check for it.
+
+2011-01-20  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	Merged lp:~notmyname/swift/cname_exception_bug - added NoAnswer error catching
+
+2011-01-20  John Dickinson  <john.dickinson@rackspace.com>
+
+	added NoAnswer error catching
+
+2011-01-20  Colin Nicholson  <colin.nicholson@iomart.com>
+
+	also catch NXDOMAIN exception
+
+2011-01-20  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	obsolete PATH_TO_TEST_XFS
+
+2011-01-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	pep8
+
+2011-01-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	made tests play nice with standalone unittest, fixed some doc stuff
+
+2011-01-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	obsolete PATH_TO_TEST_XFS
+
+2011-01-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	mocked out xattr in test_proxy
+
+2011-01-20  gholt  <gholt@rackspace.com>
+
+	Updates to remove _ usage that is not i18n related
+
+2011-01-19  gholt  <gholt@rackspace.com>
+
+	Updates to remove _ usage that is not i18n related
+
+2011-01-19  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	This modifies http_connect() and http_connect_raw() to use the default ports if not given.
+	
+	Modyfing only http_connect_raw is enough to fix swauth bins but both for symmetry.
+
+2011-01-20  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	http_connect and http_connect_raw use the default http ports if no
+	port is given
+
+2011-01-19  Michael Barton  <michael.barton@rackspace.com>
+
+	break up that giant chunked put test
+
+2011-01-19  Michael Barton  <michael.barton@rackspace.com>
+
+	break up that chunked put test
+
+2011-01-19  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	Update swift3 docs for auth changes
+
+2011-01-19  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: update the comment for the id scheme change
+
+2011-01-19  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	Fixes swift3 middleware so that container listings work correctly with utf-8 encoded container names.
+
+2011-01-18  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: fix unicode name container and object
+
+2011-01-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	Stats system access log processor now allows for extra log fields to be at the end of the access log lines.
+	
+	
+	This allows the proxy server to freely append logged fields to log messages without breaking the stats system.
+
+2011-01-17  John Dickinson  <john.dickinson@rackspace.com>
+
+	access processor now handles extra fields in the log line
+
+2011-01-18  gholt  <gholt@rackspace.com>
+
+	client.py: Reset of streams during upload retries
+
+2011-01-17  gholt  <gholt@rackspace.com>
+
+	client.py: Dead code removal
+
+2011-01-17  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2011-01-17  gholt  <gholt@rackspace.com>
+
+	client.py: Reset of streams during upload retries
+
+2011-01-18  Michael Barton  <michael.barton@rackspace.com>
+
+	shuffle nodes and cache files for better public serving performance
+
+2011-01-18  Michael Barton  <michael.barton@rackspace.com>
+
+	shuffle nodes and cache files for public access performance
+
+2011-01-18  Chris Wedgwood  <cw@f00f.org>
+
+	More fixes.
+
+2011-01-18  Chris Wedgwood  <cw@f00f.org>
+
+	Fix output formatting (missing tuple).
+	
+	Fix to be robust when container and object counts are None (this
+	happens if accounts can't be located).
+
+2011-01-18  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	Fixes devauth error if s3 auth fails
+
+2011-01-18  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: fix devauth auth failure handling
+
+2011-01-18  Michael Barton  <michael.barton@rackspace.com>
+
+	modify default_swift_cluster option format
+
+2011-01-17  Michael Barton  <michael.barton@rackspace.com>
+
+	modify default_swift_cluster option format
+
+2011-01-17  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: fix AWSAccessKeyId
+	
+	We use cfaccount as AWSAccessKeyId (something like
+	AUTH_89308df71f274e33af17779606f08fa0). However, users with the same
+	account use the same cfaccount. In such case, we can't know which
+	password should be used as a secret key to calculate the HMAC.
+	
+	This changes AWSAccessKeyId to the combination of account and user:
+	
+	Authorization: AWS test:tester:xQE0diMbLRepdf3YB+FIEXAMPLE=
+	
+	The auth validates the HMAC and sends a cfaccount back to the
+	proxy. The proxy rewrites the path with the cfaccount.
+
+2011-01-17  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: update unit tests for AWSAccessKeyId change
+
+2011-01-17  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: fix AWSAccessKeyId
+	
+	We use cfaccount as AWSAccessKeyId (something like
+	AUTH_89308df71f274e33af17779606f08fa0). However, users with the same
+	account use the same cfaccount. In such case, we can't know which
+	password should be used as a secret key to calculate the HMAC.
+	
+	This changes AWSAccessKeyId to the combination of account and user:
+	
+	Authorization: AWS test:tester:xQE0diMbLRepdf3YB+FIEXAMPLE=
+	
+	The auth validates the HMAC and sends a cfaccount back to the
+	proxy. The proxy rewrites the path with the cfaccount.
+
+2011-01-17  Chuck Thier  <cthier@gmail.com>
+
+	Updates client.py to green HTTPS connections if eventlet is available
+
+2011-01-17  Chuck Thier  <cthier@gmail.com>
+
+	Removed the bare excepts
+
+2011-01-17  Chuck Thier  <cthier@gmail.com>
+
+	Fixes issue of HTTPS not being greened
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	Execute object server fsyncs in a thread pool so they don't hold up the workers.
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	Execute fsyncs in a thread pool.
+
+2011-01-14  Chuck Thier  <cthier@gmail.com>
+
+	Add docstrings and pointers in the docs for swift3
+
+2011-01-14  Chuck Thier  <cthier@gmail.com>
+
+	Moved the main middleware docs to the module level
+
+2011-01-14  Chuck Thier  <cthier@gmail.com>
+
+	Added doc strings and pointers to docs for swift3
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	Support more query args and headers in the swift3 middleware
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	simplify put response
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	PUT headers
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	typo
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	swift3 bucket listing args
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	hopefully last of the i18n gettext calls
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	missed things
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	few more from proxy
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	i18n stuff
+
+2011-01-14  Chris Wedgwood  <cw@f00f.org>
+
+	Small fixes to make audit work robustly in the case where people liked to put funny chars in their container and object names.
+
+2011-01-13  Chris Wedgwood  <cw@f00f.org>
+
+	Don't unnecessarily quote account, container or object values.
+	
+	This fixed the problem where containers or objects with characters
+	that need quoting can't be audited because they aren't found.
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	use python-netifaces to get local IP addresses.
+	I'll add that to the package depends right after this is merged.
+
+2011-01-13  Michael Barton  <michael.barton@rackspace.com>
+
+	netifaces
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	pep8 fixes for swift3 middleware
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	unit tests
+
+2011-01-14  Michael Barton  <michael.barton@rackspace.com>
+
+	pep8 and xml escapes
+
+2011-01-14  gholt  <gholt@rackspace.com>
+
+	Fix for GETing a manifest that has an empty listing
+
+2011-01-12  gholt  <gholt@rackspace.com>
+
+	Fix for GETing a manifest that has an empty listing
+
+2011-01-14  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	Seems that the following operations work with boto:
+	
+	- List of buckets
+	- Create bucket
+	- Delete bucket
+	- List of objects in a bucket
+	- PUT object
+	- GET object
+	- DELETE object
+	- HEAD object
+	
+	Swift account (something like AUTH_89308df71f274e33af17779606f08fa0) is used as AWSAccessKeyId.
+	Swift password (passed to swift-auth-add-user) is used as AWS Secret Access Key.
+	
+	S3 client concatenates selected elements of a request to form a string, uses AWS Secret Access Key to calculate the HMAC of that string, and then put the HMAC value to the HTTPAuthorization header.
+	
+	The proxy server sends the account info, the formed string of a request, and the HMAC value included with the request to the auth server. The auth server finds AWS Secret Access Key from the account info, use the key to calculate the HMAC of the string, and sees if it matches the HMAC value.
+
+2011-01-14  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	Merging the upstream
+
+2011-01-13  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: add more unit tests
+
+2011-01-13  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: add unit tests
+
+2011-01-06  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	rename the module from s3.py to swift3.py (suggested by Chuck Thier)
+
+2011-01-06  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: fix GETorHEAD
+	
+	- replace 'content-length and 'content-encoding' with 'Content-Length
+	and 'Content-Encoding' respectively.
+	
+	- return 'Content-Type' and 'last-modified' headers too.
+	
+	- remove 'Content-MD5' since seems that S3 doesn't use it for GET or
+	HEAD response.
+
+2011-01-05  Michael Barton  <michael.barton@rackspace.com>
+
+	further cleanup
+
+2011-01-05  Michael Barton  <michael.barton@rackspace.com>
+
+	GETorHEAD cleanup
+
+2011-01-05  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	s3api: clean up the response handling
+
+2011-01-04  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	add S3 API support
+
+2011-01-13  Greg Lange  <glange@rackspace.com>
+
+	Made older functional tests look for default config file when env variable is unset
+
+2011-01-12  Greg Lange  <glange@rackspace.com>
+
+	Made older functional tests look for default config file when env variable is unset
+
+2011-01-13  gholt  <gholt@rackspace.com>
+
+	Shuffle the partitions to reassign on a ring rebalance.
+
+2011-01-13  gholt  <gholt@rackspace.com>
+
+	Shuffle the partitions to reassign on a ring rebalance.
+
+2011-01-13  Michael Barton  <michael.barton@rackspace.com>
+
+	small logging fixes
+
+2011-01-13  Michael Barton  <michael.barton@rackspace.com>
+
+	fix
+
+2011-01-13  Michael Barton  <michael.barton@rackspace.com>
+
+	i18n
+
+2011-01-12  Michael Barton  <michael.barton@rackspace.com>
+
+	object replicator logging fixes
+
+2011-01-12  David Goetz  <david.goetz@rackspace.com>
+
+	Small bug with the object replicator error logging. 
+
+2011-01-11  David Goetz  <david.goetz@rackspace.com>
+
+	fixing error log bug
+
+2011-01-11  David Goetz  <david.goetz@rackspace.com>
+
+	Rate limit the object auditor, add unit tests, and fix a bug in the location generator.
+
+2011-01-10  David Goetz  <david.goetz@rackspace.com>
+
+	merging to trunk, otra
+
+2011-01-10  David Goetz  <david.goetz@rackspace.com>
+
+	merging to trunk
+
+2011-01-03  David Goetz  <david.goetz@rackspace.com>
+
+	fix i18n logs
+
+2010-12-30  David Goetz  <david.goetz@rackspace.com>
+
+	changes after peer review, pep8 and eventlet.sleep
+
+2010-12-28  David Goetz  <david.goetz@rackspace.com>
+
+	fix for 0 incr_by
+
+2010-12-28  David Goetz  <david.goetz@rackspace.com>
+
+	pep8 and merge fixes
+
+2010-12-28  David Goetz  <david.goetz@rackspace.com>
+
+	clearing out stats for forever mode
+
+2010-12-28  David Goetz  <david.goetz@rackspace.com>
+
+	merging to trunk
+
+2010-12-28  David Goetz  <david.goetz@rackspace.com>
+
+	adding defaults, docs, and unit tests
+
+2010-12-17  David Goetz  <david.goetz@rackspace.com>
+
+	more unit tests, refactoring,  and loc gen fix
+
+2010-12-16  David Goetz  <david.goetz@rackspace.com>
+
+	adding in rate limiting and unit tests
+
+2011-01-11  John Dickinson  <john.dickinson@rackspace.com>
+
+	server-side object copy now also copies the content-type of the source object if the content type is not given in the copy request
+
+2011-01-11  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2011-01-11  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed and tested charset on content types
+
+2011-01-10  John Dickinson  <john.dickinson@rackspace.com>
+
+	I did not know the wonders of test_chunked_put_and_a_bit_more
+
+2011-01-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	changed the order of setting the charset and content_type to ensure that charset isn't added to the object
+
+2011-01-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	object copy now copies the content type
+
+2011-01-11  gholt  <gholt@rackspace.com>
+
+	Change copies of x-object-manifest objects to copy the actual contents of the object, not just the manifest marker itself.
+
+2011-01-05  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-12-30  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-12-28  gholt  <gholt@rackspace.com>
+
+	Made copies of ridiculously segmented objects error.
+
+2010-12-28  gholt  <gholt@rackspace.com>
+
+	Change copies of x-object-manifest objects to copy the actual contents of the object, not just the manifest marker itself
+
+2011-01-11  gholt  <gholt@rackspace.com>
+
+	Incorporated Swauth into Swift as an optional DevAuth replacement.
+
+2011-01-10  gholt  <gholt@rackspace.com>
+
+	Fp leak fix
+
+2011-01-10  gholt  <gholt@rackspace.com>
+
+	Fixed bug with using new internal url
+
+2011-01-10  gholt  <gholt@rackspace.com>
+
+	Added public/private urls for swauth default swift cluster setting
+
+2011-01-07  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2011-01-07  gholt  <gholt@rackspace.com>
+
+	More error reporting
+
+2011-01-05  gholt  <gholt@rackspace.com>
+
+	Test updates suggested by glange
+
+2011-01-05  gholt  <gholt@rackspace.com>
+
+	Make Swauth return 404 on split_path exceptions
+
+2011-01-05  gholt  <gholt@rackspace.com>
+
+	Fix bug where trying to access an account name that exactly matched the reseller_prefix would raise an exception
+
+2011-01-05  gholt  <gholt@rackspace.com>
+
+	Fix to limit account DELETEs to just reseller admins
+
+2011-01-05  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2011-01-04  gholt  <gholt@rackspace.com>
+
+	Removed extraneous print
+
+2010-12-30  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-12-28  gholt  <gholt@rackspace.com>
+
+	Updated the docs to better reflect the .token_[0-f] container selection.
+
+2010-12-22  gholt  <gholt@rackspace.com>
+
+	i18nify log message
+
+2010-12-22  gholt  <gholt@rackspace.com>
+
+	Merge from trunk (i18n)
+
+2010-12-20  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-12-20  gholt  <gholt@rackspace.com>
+
+	swauth: Fixed unit tests for webob changes
+
+2010-12-10  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-12-09  gholt  <gholt@rackspace.com>
+
+	new swauth-cleanup-tokens; restricted listing .auth account to .super_admin; doc updates
+
+2010-12-08  gholt  <gholt@rackspace.com>
+
+	swauth: .token objects are now split into 16 containers
+
+2010-12-08  gholt  <gholt@rackspace.com>
+
+	swauth: another batch of tests and bufixes found while testing
+
+2010-12-06  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-12-03  gholt  <gholt@rackspace.com>
+
+	swauth: another batch of tests and bugfixes found while testing
+
+2010-12-03  gholt  <gholt@rackspace.com>
+
+	swauth: another batch of tests and bugfixes found while testing
+
+2010-12-02  gholt  <gholt@rackspace.com>
+
+	Expired token cleanup
+
+2010-12-01  gholt  <gholt@rackspace.com>
+
+	Added forgotten swauth-set-account-service
+
+2010-12-01  gholt  <gholt@rackspace.com>
+
+	swauth-list work; new swauth-set-account-service; .clusters is now .services; doc updates
+
+2010-12-01  gholt  <gholt@rackspace.com>
+
+	Incorporated Swauth into Swift as an optional DevAuth replacement.
+
+2011-01-07  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	reworked tnx logging
+
+2011-01-05  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	revert x-cf-trans-id rename
+
+2011-01-05  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	this is to make gholt happy; well less unhappy
+
+2011-01-05  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	moved the txn_id read into a utils helper
+
+2011-01-05  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	pep8 fo' realz
+
+2011-01-04  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	pep8
+
+2011-01-04  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed missing NamedLogger import in bin/swift-bench, refactored
+	LogAdapter.tnx_id so that it works with multiple calls to get_logger, fixed
+	common.middleware.catch_errors to only call get_logger if it needs too, renamed
+	x-cf-trans-id to x-swift-tnx-id
+
+2011-01-07  Russ Nelson  <nelson@nelson-laptop>
+
+	At least in theory, the code is not functionally different. It's just physically restructured internally so that the help strings are now docstrings within each command/function.  There are other improvements possible, such as including test code in the docstring. I love Python!
+
+2011-01-05  Russ Nelson  <nelson@nelson-laptop>
+
+	What he said!!
+
+2011-01-04  gholt  <gholt@rackspace.com>
+
+	Fix a couple bugs; rework the rework a bit more; PEP8
+
+2010-12-31  Russ Nelson  <nelson@nelson-laptop>
+
+	Refactor the command and help structure so it uses Python's docstrings. Also put the commands into a
+	class so they can be listed and their docstrings automatically printed.
+
+2011-01-05  Anne Gentle  <anne@openstack.org>
+
+	Changed all copyright notices I could find in .py and .rst files for 2011. Happy new year and all that.
+
+2011-01-04  Anne Gentle  <anne@openstack.org>
+
+	Changed copyright notices on py files and the single rst file with a copyright notice
+
+2010-12-30  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixes variable collision in stats system
+
+2010-12-21  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixes variable name collision
+
+2010-12-29  gholt  <gholt@rackspace.com>
+
+	PEP8 Updates
+
+2010-12-29  gholt  <gholt@rackspace.com>
+
+	PEP8 Updates
+
+2010-12-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added gettext import/install to swift/__init__.py
+
+2010-12-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged gholts changes
+
+2010-12-29  gholt  <gholt@rackspace.com>
+
+	Cleaned up the bins; patched the broken test (when run standalone)
+
+2010-12-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged trunk
+
+2010-12-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	made this i18n importing sane
+
+2010-12-28  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	updated COPY method in proxy, added functional test
+
+2010-12-28  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added functional test for copy, fixed bug in copy method
+
+2010-12-28  Michael Barton  <michael.barton@rackspace.com>
+
+	set default journal mode for rolling back from WAL code
+
+2010-12-06  Michael Barton  <michael.barton@rackspace.com>
+
+	set default journal mode for rolling back from WAL code
+
+2010-12-22  Michael Barton  <michael.barton@rackspace.com>
+
+	first pass at i18n
+
+2010-12-22  Michael Barton  <michael.barton@rackspace.com>
+
+	gholt changes
+
+2010-12-22  gholt  <gholt@rackspace.com>
+
+	Fixed probe tests to not use relativity (on imports)
+
+2010-12-22  Michael Barton  <michael.barton@rackspace.com>
+
+	add gettext to all binaries
+
+2010-12-22  Michael Barton  <michael.barton@rackspace.com>
+
+	fix fancy txnid logging
+
+2010-12-22  Michael Barton  <michael.barton@rackspace.com>
+
+	i18n finishup
+
+2010-12-20  Michael Barton  <michael.barton@rackspace.com>
+
+	add more gettext calls
+
+2010-12-20  Michael Barton  <michael.barton@rackspace.com>
+
+	update to trunk
+
+2010-12-20  Michael Barton  <michael.barton@rackspace.com>
+
+	tests fixed
+
+2010-12-20  Michael Barton  <michael.barton@rackspace.com>
+
+	gettext updates
+
+2010-12-15  Michael Barton  <michael.barton@rackspace.com>
+
+	merge trunk
+
+2010-12-02  Michael Barton  <michael.barton@rackspace.com>
+
+	use logging formatter to standardize transaction id logging
+
+2010-12-20  gholt  <gholt@rackspace.com>
+
+	Added large object support by allowing the client to upload the object in segments and download them all as a single object. Also, made updates client.py and st to support and provide an example of how to use the feature. Finally, there is an overview document that needs reviewing.
+
+2010-12-16  gholt  <gholt@rackspace.com>
+
+	lobjects: The Last-Modified header is now determined for reasonably segmented objects.
+
+2010-12-16  gholt  <gholt@rackspace.com>
+
+	Made stat display of objects suppress content-length, last-modified, and etag if they aren't in the headers
+
+2010-12-16  gholt  <gholt@rackspace.com>
+
+	st: Works with chunked transfer encoded downloads now
+
+2010-12-14  gholt  <gholt@rackspace.com>
+
+	Even though isn't 100% related, made st emit a warning if there's a / in a container name
+
+2010-12-14  gholt  <gholt@rackspace.com>
+
+	Changed to only limit manifest gets after first 10 segments. Makes tests run faster but does allow amplification 1:10. At least it's not 1:infinity like before.
+
+2010-12-14  gholt  <gholt@rackspace.com>
+
+	Limit manifest gets to one segment per second; prevents amplification attacks of tons of tiny segments
+
+2010-12-14  gholt  <gholt@rackspace.com>
+
+	x-copy-from now understands manifest sources and copies details rather than contents
+
+2010-12-14  gholt  <gholt@rackspace.com>
+
+	Fixed a bug where a HEAD on a really, really large object would give a content-length of 0 instead of transfer-encoding: chunked
+
+2010-12-13  gholt  <gholt@rackspace.com>
+
+	Now supports infinite objects!
+
+2010-12-10  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2010-12-06  gholt  <gholt@rackspace.com>
+
+	Merge from lp:~clay-gerrard/swift/lobjects_history
+
+2010-12-06  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	updated large objects history
+
+2010-12-06  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-12-02  gholt  <gholt@rackspace.com>
+
+	SegmentIterable: logs exceptions just once; 503s on exception; fix except syntax; make sure self.response is always *something*
+
+2010-11-30  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2010-11-29  gholt  <gholt@rackspace.com>
+
+	Fixed bug dfg found in st
+
+2010-11-29  gholt  <gholt@rackspace.com>
+
+	Added history section for large object support docs
+
+2010-11-24  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2010-11-23  gholt  <gholt@rackspace.com>
+
+	Documentation of the manifest/segments feature
+
+2010-11-23  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-11-19  gholt  <gholt@rackspace.com>
+
+	st delete will delete manifest segments as well; added --leave-segments option to override such behavior
+
+2010-11-19  gholt  <gholt@rackspace.com>
+
+	st overwrites of manifests now clean up the old segments
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Basic working segmented upload
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2010-11-16  gholt  <gholt@rackspace.com>
+
+	Server-side implementation for segmented objects
+
+2010-12-17  John Dickinson  <john.dickinson@rackspace.com>
+
+	changes default server_name in access log processor to match the default server name in the proxy server
+
+2010-12-16  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed lp bug 671704
+
+2010-12-13  Michael Barton  <michael.barton@rackspace.com>
+
+	remove migration header support
+
+2010-12-13  Michael Barton  <michael.barton@rackspace.com>
+
+	remove migration header
+
+2010-12-10  Greg Lange  <glange@rackspace.com>
+
+	Skips directory creation in st when streaming to standard out.
+
+2010-12-09  Greg Lange  <glange@rackspace.com>
+
+	in st, skips directory creation when streaming to standard out
+
+2010-12-10  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	object replicator: fix replica deletion condition
+
+2010-12-06  FUJITA Tomonori  <fujita.tomonori@lab.ntt.co.jp>
+
+	object replicator: fix replica deletion condition
+
+2010-12-06  Greg Lange  <glange@rackspace.com>
+
+	Improved caching of results in the proxy server's account_info() and container_info() methods.
+
+2010-11-30  Greg Lange  <glange@rackspace.com>
+
+	makes account and container info caching in proxy better
+
+2010-12-03  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	update tests for webob 1.0
+
+2010-12-01  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged trunk
+
+2010-11-30  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	update common.middleware.auth tests for compat with webob 1.0
+
+2010-12-01  Michael Barton  <michael.barton@rackspace.com>
+
+	make swift-init only warn when there are missing configs
+
+2010-11-30  Michael Barton  <michael.barton@rackspace.com>
+
+	return from do_start early if config file is missing
+
+2010-11-30  Michael Barton  <michael.barton@rackspace.com>
+
+	make swift-init only warn on missing configs
+
+2010-12-01  John Dickinson  <john.dickinson@rackspace.com>
+
+	changed end_marker to be non-inclusive
+
+2010-11-29  John Dickinson  <john.dickinson@rackspace.com>
+
+	changed end_marker to not be inclusive
+
+2010-11-30  gholt  <gholt@rackspace.com>
+
+	proxy: added account DELETE method; added option to control whether account PUTs and DELETEs are even callable
+
+2010-11-30  gholt  <gholt@rackspace.com>
+
+	Removed extra copy-pasted code
+
+2010-11-30  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-11-29  gholt  <gholt@rackspace.com>
+
+	Updated howto_installmultinode.rst
+
+2010-11-29  gholt  <gholt@rackspace.com>
+
+	proxy: added account DELETE method; added option to control whether account PUTs and DELETEs are even callable
+
+2010-11-30  Anne Gentle  <anne@openstack.org>
+
+	Added a section about scripting ring management based on Citrix contribution, will continue to look in their document for more items to bring over. Also fixed a typo in the SAIO "choose either see" to just "choose either".
+
+2010-11-30  Anne Gentle  <anne@openstack.org>
+
+	Edited to reflect ring creation not management
+
+2010-11-30  Anne Gentle  <anne@openstack.org>
+
+	Adding Citrix contributions to Admin Guide
+
+2010-11-30  Conrad Weidenkeller  <conrad.weidenkeller@rackspace.com>
+
+	Added the ability to keep a separate mime.types file in the /etc/swift dir.
+
+2010-11-26  Conrad Weidenkeller  <conrad.weidenkeller@rackspace.com>
+
+	Merged Chucks patch
+
+2010-11-26  Chuck Thier  <cthier@gmail.com>
+
+	Removed uneeded creation of resellers.conf from the unit test
+
+2010-11-26  Conrad Weidenkeller  <conrad.weidenkeller@rackspace.com>
+
+	Merged changes for updated unit test submitting for review again
+
+2010-11-24  gholt  <gholt@rackspace.com>
+
+	Maybe even a bit more concise with test_custom_mime_types_files
+
+2010-11-24  gholt  <gholt@rackspace.com>
+
+	Updated test_custom_mime_types_files
+
+2010-11-24  Conrad Weidenkeller  <conrad.weidenkeller@rackspace.com>
+
+	Unit tests pass now work as expected
+
+2010-11-24  Conrad Weidenkeller  <conrad.weidenkeller@rackspace.com>
+
+	Added Unit Test
+
+2010-11-23  Conrad Weidenkeller  <conrad.weidenkeller@rackspace.com>
+
+	PEP 8 compliance and small modification to mime.types file
+
+2010-11-23  Conrad Weidenkeller  <conrad.weidenkeller@rackspace.com>
+
+	Added Custom mime.types file for swift.
+
+2010-11-24  John Dickinson  <john.dickinson@rackspace.com>
+
+	improved the container listings for the stats processor
+
+2010-11-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-11-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-11-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	improved the container listings for the stats processor
+
+2010-11-24  Anne Gentle  <anne@openstack.org>
+
+	Adding a section about adding proxy servers to the multi-node install. I used https://answers.launchpad.net/swift/+question/134585 as a reference point so I might not have enough detail in the section - feel free to offer suggested edits.
+
+2010-11-24  Anne Gentle  <anne@openstack.org>
+
+	Edits based on input
+
+2010-11-23  Anne Gentle  <anne@openstack.org>
+
+	Added a section about adding additional proxy servers to the multi-node install doc
+
+2010-11-24  Greg Lange  <glange@rackspace.com>
+
+	fix log in account_info and container_info
+
+2010-11-17  Greg Lange  <glange@rackspace.com>
+
+	Fixed some logic in swift.proxy.Controller.account_info and container_info
+
+2010-11-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	updated daemonize process, added option for servers/daemons to log to console
+
+2010-11-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	remove capture_io stuff from db_replicator.__init__
+
+2010-11-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed some calls to get_logger that didn't clean up after themselves
+
+2010-11-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	removed unneeded daemonize function from utils, pulled get_socket out of run_wsgi, reworked test_utils and test_wsgi
+
+2010-11-17  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	cleaned up test reloads
+
+2010-11-17  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	spelling typos
+
+2010-11-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged trunk
+
+2010-11-17  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged trunk
+
+2010-11-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed missing kwargs in bin/swift-log-uploader
+
+2010-11-15  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed typo in doc string for daemonize
+
+2010-11-15  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged remote changes
+
+2010-11-11  clayg  <clay.gerrard@gmail.com>
+
+	swapped daemonize calls
+
+2010-11-11  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added helper/util to parse command line args; removed some duplicated code in
+	server/daemon bin scripts;  more standized python/linux daemonization
+	procedures; fixed lp:666957 "devauth server creates auth.db with the wrong
+	privileges"; new run_daemon helper based on run_wsgi simplifies daemon
+	launching/testing; new - all servers/daemons support verbose option when
+	started interactivlty which will log to the console; fixed lp:667839 "can't
+	start servers with relative paths to configs"; added tests
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Cleaned up st command line parsing; always use included client.py as well
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Fallback to HTTPConnection if BufferedHTTPConnection is nbot available
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	This is to make letterj happy. Well, less unhappy.
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Cleaner environ-based option defaults
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Cosmetic fixes for some continuation line idents
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Keep the first command line parse from exiting due to missing required options
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Fix ST_ environ bug in st
+
+2010-11-18  gholt  <gholt@rackspace.com>
+
+	Cleaned up st command line parsing; always use included client.py as well
+
+2010-11-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	added end_marker query parameter for container and object listings
+
+2010-11-17  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed unit test to include knowledge of end_marker
+
+2010-11-16  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-11-16  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated a docstring
+
+2010-11-16  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed copy/paste error
+
+2010-11-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	changed stats system to take advantage of end_marker
+
+2010-11-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	added end_marker query parameter to container and object listings
+
+2010-11-16  Jay Payne  <letterj@racklabs.com>
+
+	Added "-o" option to the st tool
+	
+	The option "-o <filename>" will send the object data to a file named <filename>
+	The option "-o -" will send the object data to standard out
+	
+	Special Note:  This option only works with a single file download.
+
+2010-11-11  Jay Payne  <letterj@racklabs.com>
+
+	Bring st_stream up to date.
+
+2010-11-03  Jay Payne  <letterj@racklabs.com>
+
+	Added -o option for file redirection and/or stream data to stdout
+
+2010-11-16  David Goetz  <david.goetz@rackspace.com>
+
+	Adding unit tests for object replicator.  Fixing bug in hash_suffix.
+
+2010-11-16  David Goetz  <david.goetz@rackspace.com>
+
+	adding temp dir thing
+
+2010-11-16  David Goetz  <david.goetz@rackspace.com>
+
+	changes from code review
+
+2010-11-05  David Goetz  <david.goetz@rackspace.com>
+
+	adding tests and splitting out collect jobs
+
+2010-11-03  David Goetz  <david.goetz@gmail.com>
+
+	adding extra tests and suffix hash bug fix
+
+2010-10-29  David Goetz  <david.goetz@gmail.com>
+
+	adding run_once unit test
+
+2010-11-16  Anne Gentle  <anne@openstack.org>
+
+	This will change the Sphinx theme for the clean white theme with red links - though we haven't yet worked Google Analytics into the theme, I'd like to propose the merge now so that nova.openstack and swift.openstack match - they've merged theirs in after some merge hiccups. 
+
+2010-11-16  Anne Gentle  <anne@openstack.org>
+
+	Added red link color to the module links
+
+2010-11-16  Anne Gentle  <anne@openstack.org>
+
+	Hopefully remove a conf.app that mysteriously appeared
+
+2010-11-16  Anne Gentle  <anne@openstack.org>
+
+	Hopefully removed a conf.app that mysteriously appeared
+
+2010-11-16  Anne Gentle  <anne@openstack.org>
+
+	Adding files for _theme dir and _static/tweaks.css"
+
+2010-11-12  Anne Gentle  <anne@openstack.org>
+
+	Updated Sphinx theme and index.rst
+
+2010-11-15  Anne Gentle  <anne@openstack.org>
+
+	Added a "skip over" link so partition-makers can skip the loopback section of the SAIO doc
+
+2010-11-15  Anne Gentle  <anne@openstack.org>
+
+	Added a link to skip to the Rsync section, bypassing the loopback
+
+2010-11-15  David Goetz  <david.goetz@rackspace.com>
+
+	Fixing rate limiting and proxy/server.py so that they don't throw stack traces if memcache wasn't loaded.
+
+2010-11-08  David Goetz  <david.goetz@rackspace.com>
+
+	checking for memcache incase not setup
+
+2010-11-11  Anne Gentle  <anne@openstack.org>
+
+	Updated the Google Analytics code (one character change) to better track swift.openstack.org independently
+
+2010-11-11  Anne Gentle  <anne@openstack.org>
+
+	Updated Google Analytics code for more precise tracking
+
+2010-11-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	middleware that allows for cname lookups on unknown hostnames
+
+2010-11-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed to make tests work
+
+2010-11-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	added prefix to memcache key used
+
+2010-11-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-11-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	better cname lookups
+
+2010-11-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	added SkipTest for cname tests if dnspython is not installed
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed some tests and edge cases
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	pep8
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-11-02  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-11-01  John Dickinson  <john.dickinson@rackspace.com>
+
+	added tests for cname lookup middleware
+
+2010-10-31  John Dickinson  <john.dickinson@rackspace.com>
+
+	basic untested functionality
+
+2010-10-31  John Dickinson  <john.dickinson@rackspace.com>
+
+	WIP while I go to enjoy a nice day outside
+
+2010-10-31  John Dickinson  <john.dickinson@rackspace.com>
+
+	initial cname lookup work stubbed out
+
+2010-11-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed bug in internal proxy
+
+2010-11-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with clayg's branch
+
+2010-11-05  clayg  <clay.gerrard@gmail.com>
+
+	updated lazy_load_internal_proxy test
+
+2010-11-04  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed bug in internal_proxy; added test
+
+2010-11-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed bug in internal_proxy
+
+2010-11-05  Chuck Thier  <cthier@gmail.com>
+
+	Remove .DS_Store and adds it to .bzrignore
+
+2010-11-05  Chuck Thier  <cthier@gmail.com>
+
+	Removing .DS_Store and adding to .bzrignore
+
+2010-11-05  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed auth_copy bug, bytes_transferred copy logging bug, and early denial for proxy.server.ObjectController.COPY method; added tests
+
+2010-11-05  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged lp:~notmyname/swift/copy_logging_bug, ensure bytes_transferred is zero on x-copy-from put, added test
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-11-02  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-28  John Dickinson  <john.dickinson@rackspace.com>
+
+	changed env var in request to properly log the method
+
+2010-10-28  John Dickinson  <john.dickinson@rackspace.com>
+
+	reset bytes_transferred for copy requests
+
+2010-11-04  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed auth_copy bug, and early denial for proxy.server.ObjectController.COPY method; added tests
+
+2010-11-04  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged with trunk
+
+2010-11-04  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged lp:~gholt/swift/copy_auth_bug
+
+2010-11-03  gholt  <gholt@rackspace.com>
+
+	Fix tests; fix copy/auth problem
+
+2010-11-03  gholt  <gholt@rackspace.com>
+
+	Merged from trunk
+
+2010-10-28  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added failing test for COPY from private container
+
+2010-11-05  Anne Gentle  <anne@openstack.org>
+
+	Adds the multi-node install doc
+
+2010-11-05  Anne Gentle  <anne@openstack.org>
+
+	Added Stephen Milton to AUTHORS file under contributors
+
+2010-11-04  Anne Gentle  <anne@openstack.org>
+
+	Adds multi server install doc
+
+2010-11-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typo on the getting started doc
+
+2010-11-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typo
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	Middleware that catches and logs errors that would otherwise be sent to the client
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	pep8
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typo in example config
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-11-02  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-29  John Dickinson  <john.dickinson@rackspace.com>
+
+	added middleware to catch errors
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	Middleware that translates account and container info from the host header to the path.
+
+2010-11-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with gholt's changes
+
+2010-11-03  gholt  <gholt@rackspace.com>
+
+	PEPy fixes
+
+2010-11-03  gholt  <gholt@rackspace.com>
+
+	domain_remap bugfixes
+
+2010-11-02  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-28  John Dickinson  <john.dickinson@rackspace.com>
+
+	pep8
+
+2010-10-28  John Dickinson  <john.dickinson@rackspace.com>
+
+	domain remap middleware that maps account and container references in the domain to the path
+
+2010-11-02  Michael Barton  <michael.barton@rackspace.com>
+
+	shore up accept header parsing
+
+2010-11-02  Michael Barton  <michael.barton@rackspace.com>
+
+	support text/xml
+
+2010-10-29  Michael Barton  <michael.barton@rackspace.com>
+
+	more tests
+
+2010-10-29  Michael Barton  <michael.barton@rackspace.com>
+
+	missed a debug print
+
+2010-10-29  Michael Barton  <michael.barton@rackspace.com>
+
+	shore up accept header parsing
+
+2010-11-02  David Goetz  <david.goetz@gmail.com>
+
+	catching invalid urls and adding tests
+
+2010-11-01  David Goetz  <david.goetz@gmail.com>
+
+	small cleanup stuff
+
+2010-11-01  David Goetz  <david.goetz@gmail.com>
+
+	undoing new exception type
+
+2010-11-01  David Goetz  <david.goetz@gmail.com>
+
+	adding new exception type and catching other invalid paths
+
+2010-10-29  David Goetz  <david.goetz@gmail.com>
+
+	catching invalid urls and adding tests
+
+2010-11-02  Anne Gentle  <anne@openstack.org>
+
+	Okay, mtaylor worked out a way to have conf.py contain a build environment variable so that the build can insert the GA code but the local builds wouldn't have it. 
+
+2010-11-01  Anne Gentle  <anne@openstack.org>
+
+	Reverted SAIO doc
+
+2010-11-01  Anne Gentle  <anne@openstack.org>
+
+	Updated SAIO, deleting line to make merge easier
+
+2010-11-01  Anne Gentle  <anne@openstack.org>
+
+	Updated SAIO to genericize wiki pointer
+
+2010-10-29  Anne Gentle  <anne@openstack.org>
+
+	This contains an env variable in conf.py for the build to contain the GA code
+
+2010-10-28  Anne Gentle  <anne@openstack.org>
+
+	Added link to RHEL instructions in SAIO, added Google Analytics code
+
+2010-11-01  Anne Gentle  <anne@openstack.org>
+
+	Add link to RHEL instructions in the SAIO doc
+
+2010-11-01  Anne Gentle  <anne@openstack.org>
+
+	Changing to generic wiki page so no rhel in url
+
+2010-10-28  Anne Gentle  <anne@openstack.org>
+
+	Updated SAIO to point to RHEL instructions on wiki
+
+2010-10-28  John Dickinson  <john.dickinson@rackspace.com>
+
+	PUT with X-Copy-From header and a non-zero Content-Length will now error as a 400
+
+2010-10-27  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed x-copied-from test
+
+2010-10-27  John Dickinson  <john.dickinson@rackspace.com>
+
+	added quoting to X-Copied-From header
+
+2010-10-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed test for non-zero body in copy put
+
+2010-10-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed test for non-zero body in copy put
+
+2010-10-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed test for non-zero body in copy put
+
+2010-10-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	added test for non-zero body in copy put
+
+2010-10-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed to ensure x-copied-from header is included correctly
+
+2010-10-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed to ensure x-copied-from header is included
+
+2010-10-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	removed X-Copy-From header from new request in copy PUT
+
+2010-10-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	made length check on copy PUTs simpler
+
+2010-10-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-19  John Dickinson  <john.dickinson@rackspace.com>
+
+	added check for non-zero byte bodies in copy requests
+
+2010-10-25  David Goetz  <david.goetz@gmail.com>
+
+	Fixing a possible memcached race condition and refactoring the incr/decr functionality
+
+2010-10-25  David Goetz  <david.goetz@gmail.com>
+
+	adding back in the decr
+
+2010-10-25  David Goetz  <david.goetz@gmail.com>
+
+	changing order of int op
+
+2010-10-22  David Goetz  <david.goetz@gmail.com>
+
+	memcache race condition and combining incr and decr
+
+2010-10-25  David Goetz  <david.goetz@gmail.com>
+
+	Allow visibility into ratelimit sleeps by logging sleeps that exceed a given config value.
+
+2010-10-22  David Goetz  <david.goetz@gmail.com>
+
+	pep8 ratelimit sleep log
+
+2010-10-22  David Goetz  <david.goetz@gmail.com>
+
+	adding rate limit sleep log
+
+2010-10-21  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixes error when object auditor finds a tombstone file
+
+2010-10-21  John Dickinson  <john.dickinson@rackspace.com>
+
+	removed description of unused auditor config vars
+
+2010-10-21  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed error where tombstone files cause the object auditor to error
+
+2010-10-21  David Goetz  <david.goetz@gmail.com>
+
+	Bug fix: Memcached does not allow negative numbers passed to incr.  Adding/using decr.
+
+2010-10-20  David Goetz  <david.goetz@gmail.com>
+
+	adding decr to unit test
+
+2010-10-20  David Goetz  <david.goetz@gmail.com>
+
+	Fixing bug with incrementing memcache with a negative number
+
+2010-10-20  Chuck Thier  <cthier@gmail.com>
+
+	Updated swift-bench to put to multiple containers (20 by default) instead of just 1
+
+2010-10-20  Chuck Thier  <cthier@gmail.com>
+
+	Updated swift-bench to put to several containers (20 by default) instead of just 1
+
+2010-10-20  Anne Gentle  <anne@openstack.org>
+
+	Divided the SAIO instructions into loopback and partition scenarios, also created a new section for configuration. Fixed a typo (vist/visit) in the README.
+
+2010-10-20  Anne Gentle  <anne@openstack.org>
+
+	Fixed single quote to be a backtick
+
+2010-10-20  Anne Gentle  <anne@openstack.org>
+
+	Updated organization and fixed section headings.
+
+2010-10-20  Anne Gentle  <anne@openstack.org>
+
+	Split out the SAIO doc and fixed a typo in the README
+
+2010-10-19  Chuck Thier  <cthier@gmail.com>
+
+	Changed the auth code to use a default port of 80 if the port is not specified in default_storage_url
+
+2010-10-19  Chuck Thier  <cthier@gmail.com>
+
+	Updated to take into account ssl
+
+2010-10-19  Chuck Thier  <cthier@gmail.com>
+
+	When processing the storage url, make sure the port is set to 80 if not defined in the url
+
+2010-10-19  Michael Barton  <michael.barton@rackspace.com>
+
+	Make obj/replicator timeouts configurable
+
+2010-10-19  Michael Barton  <michael.barton@rackspace.com>
+
+	Make obj/replicator timeouts configurable
+
+2010-10-18  Chuck Thier  <cthier@gmail.com>
+
+	Bump version up to 1.1.0, and updated AUTHORS file
+
+2010-10-18  Chuck Thier  <cthier@gmail.com>
+
+	Updated debian build instructions to include bzr-builddeb
+
+2010-10-18  Chuck Thier  <cthier@gmail.com>
+
+	Bumped versioning to 1.1.0, and updated AUTHORS
+
+2010-10-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	Refactored the auditors to only do local checks. This should reduce the load the auditors place on a large cluster.
+
+2010-10-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed target quarrantine path
+
+2010-10-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	oops
+
+2010-10-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	changed auditor once mode
+
+2010-10-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed bad variable reference
+
+2010-10-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	better error handling in auditors
+
+2010-10-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	replaced comment deleted by overzealous use of the delete key
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed missing import
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	moved common auditor code to swift.common.utils
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	dumb ommission from the last commit
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	auditor generator now also yields the partition
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed bug in error handling of object auditor
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	better once mode for auditors
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	auditors now handle special case in once mode when there is nothing to audit
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typo
+
+2010-10-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	refactored auditors to have much repeated code and can now handle corrupted dbs
+
+2010-10-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	DiskFile_generator now also yields the current device. this is used if the file needs to be quarantined
+
+2010-10-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	removed bare excepts in the auditors
+
+2010-10-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed edge case in auditors that is bad when nothing is found to audit
+
+2010-10-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	removed unneeded imports in the auditors
+
+2010-10-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	removed random.choice import
+
+2010-10-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed variable names for error reporting in account auditor
+
+2010-10-13  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated auditor docstrings
+
+2010-10-13  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed pep8 error
+
+2010-10-13  John Dickinson  <john.dickinson@rackspace.com>
+
+	readded interval for the auditor. deleted too much earlier
+
+2010-10-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	refactored run forever loop in auditors to remove an unneeded call
+
+2010-10-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typo in object auditor
+
+2010-10-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typo in account and container auditors
+
+2010-10-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typo in account auditor
+
+2010-10-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated object auditor
+
+2010-10-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated account auditor
+
+2010-10-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated container auditor to only do local work and updated auditor configs
+
+2010-10-18  gholt  <gholt@rackspace.com>
+
+	Oopsy on the number of attempts to make with obj replicator
+
+2010-10-18  gholt  <gholt@rackspace.com>
+
+	Oopsy on the number of attempts to make with obj replicator
+
+2010-10-18  gholt  <gholt@rackspace.com>
+
+	Object replicator now hands off replication only on 507 errors
+
+2010-10-18  gholt  <gholt@rackspace.com>
+
+	Changed logic to attempts_left; added comment for uncommon iterator usage.
+
+2010-10-17  Michael Barton  <michael.barton@rackspace.com>
+
+	clarify code by separating accumulator into two counters
+
+2010-10-14  Michael Barton  <michael.barton@rackspace.com>
+
+	object replicator only handoff for unmounted drives
+
+2010-10-16  Michael Barton  <michael.barton@rackspace.com>
+
+	change chunks_per_sync config to mb_per_sync
+
+2010-10-15  Michael Barton  <michael.barton@rackspace.com>
+
+	move a paren
+
+2010-10-13  Michael Barton  <michael.barton@rackspace.com>
+
+	sample conf update
+
+2010-10-13  Michael Barton  <michael.barton@rackspace.com>
+
+	Change chunks_per_sync config to mb_per_sync
+
+2010-10-15  David Goetz  <david.goetz@gmail.com>
+
+	Refactor SWIFT_HASH_PATH_SUFFIX to be in a config file.  Adding new conf file /etc/swift/swift.conf
+
+2010-10-15  David Goetz  <david.goetz@gmail.com>
+
+	making the server starter fail if SWIFT_HASH_PATH_SUFFIX is not there
+
+2010-10-14  David Goetz  <david.goetz@gmail.com>
+
+	Refactor SWIFT_HASH_PATH_SUFFIX to be in a config file
+
+2010-10-15  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	created failing test for write timeout 422 error, fixed write timeout bug, added tests for better coverage of proxy.server.ObjectController.PUT, pep8
+
+2010-10-12  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed write timeout bug, better coverage of proxy PUT method, pep8
+
+2010-10-11  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	created failing test for write timeout 422 error, added tests for better coverage of ObjectController.PUT, pep8
+
+2010-10-14  Jay Payne  <letterj@racklabs.com>
+
+	Added default backlog setting to the sample config file
+
+2010-10-13  Jay Payne  <letterj@racklabs.com>
+
+	Moved backlog setting into the [Default] section of the sample-conf files
+
+2010-10-12  Jay Payne  <letterj@racklabs.com>
+
+	add default backlog setting to sample configs
+
+2010-10-14  David Goetz  <david.goetz@gmail.com>
+
+	Account and container rate limiting.
+
+2010-10-13  David Goetz  <david.goetz@gmail.com>
+
+	making unit tests work a little better
+
+2010-10-13  David Goetz  <david.goetz@gmail.com>
+
+	changing all rate_limit to ratelimit
+
+2010-10-13  David Goetz  <david.goetz@gmail.com>
+
+	changing memcache stuff
+
+2010-10-13  David Goetz  <david.goetz@gmail.com>
+
+	using eventlet sleep
+
+2010-10-13  David Goetz  <david.goetz@gmail.com>
+
+	merging in stats stuff
+
+2010-10-13  David Goetz  <david.goetz@gmail.com>
+
+	changing source docs
+
+2010-10-13  David Goetz  <david.goetz@gmail.com>
+
+	adding source docs
+
+2010-10-13  David Goetz  <david.goetz@gmail.com>
+
+	adding gholts unit test fix
+
+2010-10-12  gholt  <gholt@rackspace.com>
+
+	Fix to unit test (that has been broken for a while I guess)
+
+2010-10-12  David Goetz  <david.goetz@gmail.com>
+
+	adding documentation
+
+2010-10-12  David Goetz  <david.goetz@gmail.com>
+
+	getting rid account ratelimiting default
+
+2010-10-12  David Goetz  <david.goetz@gmail.com>
+
+	getting rid ws
+
+2010-10-12  David Goetz  <david.goetz@gmail.com>
+
+	getting rid uneeded imports
+
+2010-10-12  David Goetz  <david.goetz@gmail.com>
+
+	getting rid of a comment
+
+2010-10-12  David Goetz  <david.goetz@gmail.com>
+
+	fixing container info memcache in container GETorHEAD
+
+2010-10-11  David Goetz  <david.goetz@gmail.com>
+
+	bad doc
+
+2010-10-11  David Goetz  <david.goetz@gmail.com>
+
+	bad doc
+
+2010-10-11  David Goetz  <david.goetz@gmail.com>
+
+	pep8 compliance
+
+2010-10-11  David Goetz  <david.goetz@gmail.com>
+
+	some code cleanup
+
+2010-10-08  David Goetz  <david.goetz@gmail.com>
+
+	fixing ratelimitable requests and speeding up unit tests
+
+2010-10-06  David Goetz  <david.goetz@gmail.com>
+
+	minor bug fixes- pre ratelimit caching of container size
+
+2010-10-04  David Goetz  <david.goetz@gmail.com>
+
+	adding ratelimiting middleware and unit tests
+
+2010-10-14  Anne Gentle  <anne@openstack.org>
+
+	Spell check on .rst files for Swift, should be minimal impact. Example is changing "to of from" to "to or from" in the overview_architecture.rst file. 
+
+2010-10-14  Anne Gentle  <anne@openstack.org>
+
+	Deleted pesky extra space.
+
+2010-10-14  Anne Gentle  <anne@openstack.org>
+
+	Modified for edits. 
+	
+	
+	-------------This line and the following will be ignored --------------
+	
+	
+	modified:
+	doc/source/development_auth.rst
+	doc/source/getting_started.rst
+
+2010-10-13  Anne Gentle  <anne@openstack.org>
+
+	Spell check for .rst files
+
+2010-10-08  Chuck Thier  <cthier@gmail.com>
+
+	Somehow I missed one last commit that correctly prints the help instead of just the usage.
+
+2010-10-07  Chuck Thier  <cthier@gmail.com>
+
+	Somehow I missed the commit to print the whole help, not just usage
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	stats system for swift that takes logs generated by the system and creates a .csv file with aggregate info for each account in the system
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	added lazy load of internal proxy to log processor (you were right clay)
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	moved paren
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	pep8 tomfoolery
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed account stats filename creation
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed internal proxy references in log processor
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated readconf test
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated readconf test
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated readconf test
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed bug in log processor internal proxy lazy load code
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated stats saio docs to create logs with the appropriate permissions
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	added readconf unit test
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated setup.py and saio docs for syats system
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed readconf parameter that was broken with a previous merge
+
+2010-10-08  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed missing working directory bug in account stats
+
+2010-10-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	improved logging in log processors
+
+2010-10-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	added openstack copyright/license to test_log_processor.py
+
+2010-10-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed stats system saio docs
+
+2010-10-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed stats system saio docs
+
+2010-10-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated SAIO instructions for the stats system
+
+2010-10-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with gholt's test stubs
+
+2010-10-07  gholt  <gholt@rackspace.com>
+
+	Adding test stubs for missing test areas
+
+2010-10-06  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated stats system tests
+
+2010-10-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	added keylist mapping tests and fixed other tests
+
+2010-10-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	made try/except much less inclusive in access log processor
+
+2010-10-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed compressing file reader test
+
+2010-10-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	improved compressing file reader test
+
+2010-10-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed compressing file reader test
+
+2010-10-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed compressing file reader test
+
+2010-10-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	added tests for compressing file reader
+
+2010-10-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	added a bad lines check to the access log parser
+
+2010-10-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed stats docs
+
+2010-10-04  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-03  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-10-01  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-09-30  John Dickinson  <john.dickinson@rackspace.com>
+
+	made long lines wrap (grr pep8)
+
+2010-09-30  John Dickinson  <john.dickinson@rackspace.com>
+
+	added overview stats to the doc index
+
+2010-09-30  John Dickinson  <john.dickinson@rackspace.com>
+
+	documentation clarification and pep8 fixes
+
+2010-09-29  John Dickinson  <john.dickinson@rackspace.com>
+
+	added additional docs
+
+2010-09-23  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated with changes from trunk
+
+2010-09-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	added stats overview
+
+2010-09-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with changes from trunk
+
+2010-09-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated with changes and suggestions from code review
+
+2010-09-20  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	pep8 issues, refactored log_processor a tiny bit for testing (lazy load internal proxy), added a few comments
+
+2010-09-20  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed test bug
+
+2010-09-20  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed tests to account for changed key name
+
+2010-09-20  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed lookback in log processor
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed replica count reporting error
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed stdout capturing for generating csv files
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed listing filter in log processing
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed bug in account stats log processing
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed tests, typos, and added error handling
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	handled some typos and better handling of missing data in internal proxy
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	added error handling and missing return statement
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed copy/paste errors and missing imports
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed logging and log uploading
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	added some debug output
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed get_data_list in log_processor
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typos in log processor
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed bug in calculating offsets for filename patterns
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed some log uploading glob patterns
+
+2010-09-15  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed internal proxy put_container reference
+
+2010-09-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	made a memcache stub for the internal proxy server
+
+2010-09-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed internal proxy loading
+
+2010-09-13  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typos
+
+2010-09-13  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated config file loading to work with paste.deploy configs
+
+2010-09-11  John Dickinson  <john.dickinson@rackspace.com>
+
+	added execute perms to stats processor binaries
+
+2010-09-10  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-09-10  John Dickinson  <john.dickinson@rackspace.com>
+
+	set up log-stats-collector as a daemon process to create csv files
+
+2010-09-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-09-07  John Dickinson  <john.dickinson@rackspace.com>
+
+	updated stats binaries to be DRY compliant
+
+2010-09-02  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk (utils fix)
+
+2010-09-01  John Dickinson  <john.dickinson@rackspace.com>
+
+	added (working) stats tests
+
+2010-09-01  John Dickinson  <john.dickinson@rackspace.com>
+
+	access log parsing tests pass
+
+2010-09-01  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-09-01  John Dickinson  <john.dickinson@rackspace.com>
+
+	first test working
+
+2010-09-01  John Dickinson  <john.dickinson@rackspace.com>
+
+	initial tests for the stats system
+
+2010-08-30  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-08-26  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-08-23  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-08-22  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-08-16  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-08-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-08-14  John Dickinson  <john.dickinson@rackspace.com>
+
+	added access log processing plugin
+
+2010-08-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-08-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	added log_processor and a stats plugin
+
+2010-08-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	added account stats logger to stats system
+
+2010-08-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	merged with trunk
+
+2010-08-05  John Dickinson  <john.dickinson@rackspace.com>
+
+	initial stats system commit. includes the log uploader
+
+2010-10-08  Michael Barton  <michael.barton@rackspace.com>
+
+	make wsgi listen queue configurable, with a bigger default
+
+2010-10-08  Michael Barton  <michael.barton@rackspace.com>
+
+	Make wsgi listen queue configurable, with a bigger default
+
+2010-10-07  gholt  <gholt@rackspace.com>
+
+	Added some missing test stubs so we can better see coverage (and get a little syntax-level "testing").
+
+2010-10-07  gholt  <gholt@rackspace.com>
+
+	Added some missing test stubs so we can better see coverage (and get a little syntax-level "testing").
+
+2010-10-07  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added ability for higher level's of verbosity to options in bin/st
+
+2010-10-07  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added -v option to st, ties into -q option, for higher levels of verbosity - currently on the stat command does anything with options.verbose > 1 - it will give you the storage url and token in case you need to drop into curl
+
+2010-10-07  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	minor change to test_auth_middleware to be more explicit about the expected default values on empty Request objects, won't really be compatible with webob 1.0 until they update their release with the pending fix in trunk (http://bitbucket.org/ianb/webob/changeset/4a767f7d1659)
+
+2010-10-06  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	confirmed pending patch with webob 1.0; resolved only known issue with webob trunk, some pep8 cleanup
+
+2010-10-04  Chuck Thier  <cthier@gmail.com>
+
+	Adding a first stab at a general swift benchmark
+
+2010-10-04  Chuck Thier  <cthier@gmail.com>
+
+	Updated to print usage by default if no args are passed, and added --saio to run with saio defaults
+
+2010-10-01  Chuck Thier  <cthier@gmail.com>
+
+	Copy paste fail
+
+2010-10-01  Chuck Thier  <cthier@gmail.com>
+
+	added apache license to the new files
+
+2010-10-01  Chuck Thier  <cthier@gmail.com>
+
+	Refactored swift-bench to reuse client.py and direct_client.py
+
+2010-09-28  Chuck Thier  <cthier@gmail.com>
+
+	Now uses TRUE_VALUES from utils.py
+
+2010-09-28  Chuck Thier  <cthier@gmail.com>
+
+	Missed a rename
+
+2010-09-28  Chuck Thier  <cthier@gmail.com>
+
+	Removed some code that was no longer used
+
+2010-09-27  Chuck Thier  <cthier@gmail.com>
+
+	Fixing merge conflict
+
+2010-09-27  Chuck Thier  <cthier@gmail.com>
+
+	Initial checkin of benchmark code
+
+2010-10-01  Anne Gentle  <anne.gentle@rackspace.com>
+
+	Fixes for the Swift deployment guide page. 
+
+2010-09-30  Anne Gentle  <anne.gentle@rackspace.com>
+
+	Minor spelling and typo fixes with added words to intro the Proxy Server config.
+
+2010-09-30  Chuck Thier  <cthier@gmail.com>
+
+	Updated SAIO instructions for using a loopback device for storage, and changed rsync config to listen only on localhost
+
+2010-09-30  Chuck Thier  <cthier@gmail.com>
+
+	updated the note for the resetswift script to be in line with the new loopback device
+
+2010-09-30  Chuck Thier  <cthier@gmail.com>
+
+	Updated loopback instructions per redbo
+
+2010-09-30  Chuck Thier  <cthier@gmail.com>
+
+	Moved the message about adding an extra device to the step when creating the VM
+
+2010-09-30  Chuck Thier  <cthier@gmail.com>
+
+	Updated to be a bit more generic about the VM
+
+2010-09-30  Chuck Thier  <cthier@gmail.com>
+
+	Changed rsync on saio to only listen on localhost
+
+2010-09-30  Chuck Thier  <cthier@gmail.com>
+
+	Updated saio with instructions for using a loopback device
+
+2010-09-24  John Dickinson  <john.dickinson@rackspace.com>
+
+	Fixes bug where "/" was not allowed in Destination header in COPY requests
+
+2010-09-24  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed COPY bug and adds tests so it won't happend again
+
+2010-09-23  Chuck Thier  <cthier@gmail.com>
+
+	object-updater now records successful updates in the pickle, so that in failure scenarios it doesn't have to retry the ones the were successful before.
+
+2010-09-23  Chuck Thier  <cthier@gmail.com>
+
+	Refactored to correctly write the pickle to disk
+
+2010-09-21  Chuck Thier  <cthier@gmail.com>
+
+	Updated object updater to keep track of successes so it doesn't retry updating nodes that it has already updated
+
+2010-09-23  gholt  <gholt@rackspace.com>
+
+	Fixed bug where the object auditor hadn't been calling invalidate_hash.
+
+2010-09-22  gholt  <gholt@rackspace.com>
+
+	Fixed bug where the object auditor hadn't been calling invalidate_hash
+
+2010-09-22  Michael Barton  <michael.barton@rackspace.com>
+
+	Make check_xml_encodable to only validate utf-8 correctness
+
+2010-09-22  Michael Barton  <michael.barton@rackspace.com>
+
+	unused code
+
+2010-09-22  Michael Barton  <michael.barton@rackspace.com>
+
+	Make check_xml_encodable to only validate utf-8 correctness
+
+2010-09-21  Anne Gentle  <anne.gentle@rackspace.com>
+
+	Simple typo fix on the Swift Getting Started page to spell development correctly.
+
+2010-09-21  Anne Gentle  <anne.gentle@rackspace.com>
+
+	Corrects a typo in the Getting Started page
+
+2010-09-17  gholt  <gholt@rackspace.com>
+
+	devauth-middleware will not set its authorize func unless the token or account starts with the reseller prefix; if its not going to use its authorize func, it will set a deny-by-default func if one is not set already
+
+2010-09-17  gholt  <gholt@rackspace.com>
+
+	More doc updates, little refactoring too
+
+2010-09-17  gholt  <gholt@rackspace.com>
+
+	Merged changes from lp:~clay-gerrard/swift/authpatch2.1
+
+2010-09-17  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	after I was sure all cases were covered, I rearranged code to be more like greg's; added comments, and tests
+
+2010-09-16  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	trying to make sense of auth middleware and reseller prefix
+
+2010-09-16  gholt  <gholt@rackspace.com>
+
+	Update to better support no-reseller-prefix and multiple auth middleware
+
+2010-09-16  gholt  <gholt@rackspace.com>
+
+	Merge updates from trunk
+
+2010-09-15  gholt  <gholt@rackspace.com>
+
+	devauth-middleware will not set its authorize func unless the token or account starts with the reseller prefix; if its not going to use its authorize func, it will set a deny-by-default func if one is not set already
+
+2010-09-17  Jay Payne  <letterj@racklabs.com>
+
+	fixed two bugs in the "ls" section
+	
+	1.  changed dir location
+	2.  corrected spelling errors
+
+2010-09-17  Jay Payne  <letterj@racklabs.com>
+
+	corrected dir order and spelling errors in ls section
+
+2010-09-16  Jay Payne  <letterj@racklabs.com>
+
+	swift-get-nodes cleanup
+
+2010-09-16  Jay Payne  <letterj@racklabs.com>
+
+	Fixed pep8 errors, dir error in the listing, made dryer
+
+2010-09-15  Jay Payne  <letterj@racklabs.com>
+
+	Clean up code that was requested
+
+2010-09-16  gholt  <gholt@rackspace.com>
+
+	Just a bit of PEP8ing
+
+2010-09-15  gholt  <gholt@rackspace.com>
+
+	Just a bit of PEP8ing
+
+2010-09-16  gholt  <gholt@rackspace.com>
+
+	Notify if reseller_prefix does not match what is in auth.db
+
+2010-09-15  gholt  <gholt@rackspace.com>
+
+	Made auth.db upgrade message a bit more clear.
+
+2010-09-15  gholt  <gholt@rackspace.com>
+
+	Notify if reseller_prefix does not match what is in auth.db
+
+2010-09-15  gholt  <gholt@rackspace.com>
+
+	auth-server: Change 400 to 409 when trying to add an existing user
+
+2010-09-15  gholt  <gholt@rackspace.com>
+
+	auth-server: Change 400 to 409 when trying to add an existing user
+
+2010-09-15  gholt  <gholt@rackspace.com>
+
+	Locking down the DevAuth by adding support for a super admin and reseller admins.
+
+2010-09-11  gholt  <gholt@rackspace.com>
+
+	Updated docs.
+
+2010-09-11  gholt  <gholt@rackspace.com>
+
+	Bugfixes. Rest of tests.
+
+2010-09-10  gholt  <gholt@rackspace.com>
+
+	DevAuth support for reseller admins and an initial super admin. DevAuth server no longer needs the account ring or direct account server access. Proxy server supports account PUTs.
+
+2010-09-15  Jay Payne  <letterj@racklabs.com>
+
+	Added "HandOff" locations to swift-get-nodes
+
+2010-09-14  Jay Payne  <letterj@racklabs.com>
+
+	Adds HandOff locations to the various displays
+
+2010-09-10  gholt  <gholt@rackspace.com>
+
+	Add container-level ACLs. Refactor auth to be more pluggable. Document how to make your own auth.
+
+2010-09-10  gholt  <gholt@rackspace.com>
+
+	Proof that test "coverage" != no obvious bugs
+
+2010-09-09  gholt  <gholt@rackspace.com>
+
+	Fix bug on auto-container create during upload.
+
+2010-09-09  gholt  <gholt@rackspace.com>
+
+	Updated included client.py in st
+
+2010-09-09  gholt  <gholt@rackspace.com>
+
+	Got rid of inter-reseller ACLs. Enforce ACLs to only work within a reseller space. Updated docs and tests. We can expand to inter-reseller in the future with ACLs like .x:RESELLER_group
+
+2010-09-08  gholt  <gholt@rackspace.com>
+
+	For ACL strings: Shortened .ref to just .r, though .ref, .referer, and .referrer are all accepted. Updated 'Creating Your Own Auth Middleware' to describe how the DevAuth server works and suggestions for creating one's own. Added reseller_prefix (optional) implementation. Used urlparse in referrer_allowed. Fixed bug where group names would get lowercased by clean_acl. Changed .r:any to .r:*. Allowed .r:*.example.com to mean .r:.example.com. Made proxy log just the first authenticated group (the user) alongside the token. Moved proxy callback to clean_acl before the length check of the metadata. Cleaned up redundant logic in first proxy swift.authorize callback. Bit better docs. More and updated tests.
+
+2010-09-06  gholt  <gholt@rackspace.com>
+
+	Referrers now support user:pass part of URLs; rest of tests for what has changed
+
+2010-09-05  gholt  <gholt@rackspace.com>
+
+	Updated direct_client to match the changes in client
+
+2010-09-05  gholt  <gholt@rackspace.com>
+
+	Doc fixes and updates
+
+2010-09-05  gholt  <gholt@rackspace.com>
+
+	Fixed typos; bug fix in auth db upgrade; renamed a couple things to better reflect their new usage; updated docs
+
+2010-09-05  gholt  <gholt@rackspace.com>
+
+	Per Chuck's suggestion, changed noaccess to admin access, where admin access is not the default. Also, changed swift-auth-create-account to swift-auth-add-user with changes to use optparse
+
+2010-09-03  gholt  <gholt@rackspace.com>
+
+	Documentation of the new auth and acls middleware modules and bugfixes
+
+2010-09-03  gholt  <gholt@rackspace.com>
+
+	Updated tools and client.py to work with ACLs
+
+2010-09-03  gholt  <gholt@rackspace.com>
+
+	Simply auth middleware and document how to make your own
+
+2010-09-03  gholt  <gholt@rackspace.com>
+
+	Removed nosetests from setup.cfg as it causes coverage to be done with functtests and probetests, where it doesn't make much sense
+
+2010-09-03  gholt  <gholt@rackspace.com>
+
+	Pulled changes from lp:~gholt/swift/repozewhat
+
+2010-09-03  gholt  <gholt@rackspace.com>
+
+	Pulled changes from lp:~clay-gerrard/swift/skiptest
+
+2010-09-03  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	updated skipped functional tests to raise nose.SkipTest
+
+2010-09-03  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	updated skipped tests in test.unit.obj.test_server to raise nose.SkipTest
+
+2010-09-03  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merge repozewhat
+
+2010-09-03  gholt  <gholt@rackspace.com>
+
+	Merge from trunk
+
+2010-09-02  gholt  <gholt@rackspace.com>
+
+	Refactored auth and adding ACLs using repoze.what
+
+2010-09-03  Paul Jimenez  <pj@place.org>
+
+	Fix some minor typos in the docs and also add a -f to a suggested script to make it less noisy on first run.
+
+2010-09-01  Paul Jimenez  <pj@place.org>
+
+	fix some typos in the docs
+
+2010-09-02  John Dickinson  <john.dickinson@rackspace.com>
+
+	pass through the timeout parameter for calls to lock_parent_directory
+
+2010-09-02  John Dickinson  <john.dickinson@rackspace.com>
+
+	pass through the timeout for calls to lock_parent_directory
+
+2010-09-01  Chuck Thier  <cthier@gmail.com>
+
+	Refactored bin files to be more DRY
+
+2010-09-01  Chuck Thier  <cthier@gmail.com>
+
+	oops
+
+2010-08-31  Chuck Thier  <cthier@gmail.com>
+
+	refactored bins to by more DRY
+
+2010-08-30  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added python-pastedeploy to debian package build docs, fixes lp626364
+
+2010-08-30  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added python-pastedeploy required for the middleware refactor
+
+2010-08-30  gholt  <gholt@rackspace.com>
+
+	Fixed threading bug in test
+
+2010-08-26  gholt  <gholt@rackspace.com>
+
+	Fixed threading bug in test
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Fixed a couple of doc strings in proxy.server
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Cleaned up a couple of doc strings in proxy.server
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Refactor of swift to make better use of middleware and to use paste.deploy
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Fixed container-updater to correctly load conf
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Fixed memcache middleware config for proxy
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Fixed proxy server config for saio
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Updated SAIO to be in line with the logging refactor
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Added vm_test_mode to the sample configs
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Changed default cluster url to point to new default proxy port of 8080,
+	and set auth default port back to 11000
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Changed default port of proxy and auth to be 8080, and cleaned up exits 
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Renamed the cache middleware to memcache middleware
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Fixed doc typos and pep 8 cleanup on setup.py
+
+2010-08-24  Chuck Thier  <cthier@gmail.com>
+
+	Refactored logging configuration so that it has sane defaults
+
+2010-08-20  Chuck Thier  <cthier@gmail.com>
+
+	Merging from branch
+
+2010-08-19  Chuck Thier  <cthier@gmail.com>
+
+	Fixed a couple of doc typos
+
+2010-08-20  Chuck Thier  <cthier@gmail.com>
+
+	Fixed a couple of typos, and some config things I missed in the object-replicator
+
+2010-08-20  Chuck Thier  <cthier@gmail.com>
+
+	Updated docs (including SAIO) to refelct the paste.deploy config changes
+
+2010-08-20  Chuck Thier  <cthier@gmail.com>
+
+	Initial commit of middleware refactor
+
+2010-08-20  Chuck Thier  <cthier@gmail.com>
+
+	Initial commit of middleware refactor
+
+2010-08-23  Michael Barton  <michael.barton@rackspace.com>
+
+	remove hard-coded replica count in obj/replicator
+
+2010-08-22  Michael Barton  <michael.barton@rackspace.com>
+
+	remove object replicator hard-coded replica count
+
+2010-08-23  Caleb Tennis  <caleb.tennis@gmail.com>
+
+	If you issue a write_ring to swift-ring-builder, but there's no nodes in the ring, it crashes out.  This will cause it not to crash and write an empty ring.gz file.
+	
+	This is mainly helpful for enabling servers on nodes before pushing out a centrally generated master ring.
+
+2010-08-21  Caleb Tennis  <caleb.tennis@gmail.com>
+
+	Remove the exception from the unit test, since we don't bomb out anymore.  Also, add a warning to swift-ring-builder if you're building an empty ring, or do a write_ring and you aren't rebalanced
+
+2010-08-20  Caleb Tennis  <caleb.tennis@gmail.com>
+
+	We can still do a write_ring even if nothing is present.  Better than crashing anyway.
+
+2010-08-23  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	minor refactor and bug fix in swift.common.client, added tests
+
+2010-08-23  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	fixed pep8 warnings, updated some comments - moved swift.common.client.Connection's http_connection call into the class next to get_auth
+
+2010-08-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	found a error condition in swift.common.client where the resp would not be consumed, added tests and fixed
+
+2010-08-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	added some tests for swift.common.client, coverage from 11% => ~66%
+
+2010-08-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	make it easier for subclasses of swift.common.client.Connection to override the behavior of reauthorization (get_auth)
+
+2010-08-21  Andrew Clay Shafer  <andrew@cloudscaling.com>
+
+	Adds ubuntu mirrors and options for downloading iso to set up SAIO
+
+2010-08-20  Andrew Clay Shafer  <andrew@cloudscaling.com>
+
+	Added ubuntu mirrors and server iso to SAIO
+
+2010-08-21  Soren Hansen  <soren.hansen@rackspace.com>
+
+	Add "force-reload" option to swift-init.
+
+2010-08-19  Soren Hansen  <soren.hansen@rackspace.com>
+
+	Make swift-init support force-reload (required by Debian Policy)
+
+2010-08-18  Jay Payne  <letterj@racklabs.com>
+
+	Added howto doc about Debian packaging
+
+2010-08-18  Jay Payne  <letterj@racklabs.com>
+
+	Added howto doc about Debian packaging
+
+2010-08-17  gholt  <gholt@rackspace.com>
+
+	Cluster health monitoring docs
+
+2010-08-17  gholt  <gholt@rackspace.com>
+
+	Cluster health monitoring docs
+
+2010-08-17  gholt  <gholt@rackspace.com>
+
+	Func tests for account/container metadata (2)
+
+2010-08-16  gholt  <gholt@rackspace.com>
+
+	Argh. Forgot the tests themselves!
+
+2010-08-17  gholt  <gholt@rackspace.com>
+
+	Func tests for account/container metadata
+
+2010-08-16  gholt  <gholt@rackspace.com>
+
+	Func tests for account/container metadata
+
+2010-08-17  gholt  <gholt@rackspace.com>
+
+	Expose account/container metadata facility to external API
+
+2010-08-16  gholt  <gholt@rackspace.com>
+
+	Expose account/container metadata facility to external API
+
+2010-08-16  gholt  <gholt@rackspace.com>
+
+	Cyberduck Support and How To
+
+2010-08-14  gholt  <gholt@rackspace.com>
+
+	Fixed typo
+
+2010-08-14  gholt  <gholt@rackspace.com>
+
+	Cyberduck Support and How To
+
+2010-08-13  Cory Wright  <cory.wright@rackspace.com>
+
+	swift-ring-builder was referenced as ring_builder, swift-ring_builder, and swift_ring_builder throughout the docs.  This patch corrects everything to swift-ring-builder.
+
+2010-08-13  Cory Wright  <cory.wright@rackspace.com>
+
+	Fixed a few typos in the deployment guide (s/ring_builder/ring-builder/g)
+
+2010-08-12  gholt  <gholt@rackspace.com>
+
+	Added metadata to account and container servers
+
+2010-08-11  gholt  <gholt@rackspace.com>
+
+	Reduce transactions where possible with reclamations
+
+2010-08-10  gholt  <gholt@rackspace.com>
+
+	Added metadata to account and container servers
+
+2010-08-09  gholt  <gholt@rackspace.com>
+
+	Fix how bytes transferred are logged
+
+2010-08-09  gholt  <gholt@rackspace.com>
+
+	Fix how bytes transferred are logged
+
+2010-08-03  kapil.foss@gmail.com
+
+	just some cleanups of unused variables/imports.
+
+2010-07-30  kapil.foss@gmail.com
+
+	pyflakes cleanups, unused modules, and variables
+
+2010-07-30  Chuck Thier  <cthier@gmail.com>
+
+	Added first stab of an administration guide, added a few items to the deployment guide, cleaned up a coupld of docstring warnings, and removed some unused config options in the proxy
+
+2010-07-30  Chuck Thier  <cthier@gmail.com>
+
+	fixed typo
+
+2010-07-30  Chuck Thier  <cthier@gmail.com>
+
+	Fixing merge conflicts
+
+2010-07-30  Chuck Thier  <cthier@gmail.com>
+
+	Fixed conflict with .bzrignore
+
+2010-07-30  Chuck Thier  <cthier@gmail.com>
+
+	Added initial admin guide, and added more to the deployment guide, plus
+	cleaned up some of the doc string warning
+
+2010-07-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	moved LIMIT_LISTING consts to swift.common.constraints, 100% test coverage of swift.common.constraints
+
+2010-07-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	removed extra assignment
+
+2010-07-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merge gholt 2010-07-29 [merge] Updated docs for client.py
+
+2010-07-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	typo
+
+2010-07-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	moved LIMIT_LISTING const to swift.common.constraints, added test.unit.MockTrue, 100% test coverage on swift.common.constraints
+
+2010-07-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged
+
+2010-07-29  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merged
+
+2010-07-19  Clay Gerrard  <clay.gerrard@rackspace.com>
+
+	merge pull
+
+2010-07-29  gholt  <gholt@rackspace.com>
+
+	Updated docs for client.py
+
+2010-07-29  gholt  <gholt@rackspace.com>
+
+	Updated docs for client.py
+
+2010-07-29  Michael Barton  <michael.barton@rackspace.com>
+
+	no-op fallocate and posix_fadvise if they're not available
+
+2010-07-29  Michael Barton  <michael.barton@rackspace.com>
+
+	Change prints to logging.warn()s
+
+2010-07-29  Michael Barton  <michael.barton@rackspace.com>
+
+	Improved fallocate and posix_fadvise no-ops when unavailable.
+
+2010-07-28  Michael Barton  <michael.barton@rackspace.com>
+
+	No-op fallocate and fadvise when they aren't available.
+
+2010-07-28  Monty Taylor  <mordred@inaugust.com>
+
+	Added ChangeLog generation to sdist
+
+2010-07-28  Monty Taylor  <mordred@inaugust.com>
+
+	Fixed pep8 issues.
+
+2010-07-28  Monty Taylor  <mordred@inaugust.com>
+
+	Added ChangeLog to .bzrignore.
+
+2010-07-28  Monty Taylor  <mordred@inaugust.com>
+
+	Added code to generate a ChangeLog file from bzr on sdist.
+
+2010-07-26  Monty Taylor  <mordred@inaugust.com>
+
+	Fixed PEP8 warnings
+
+2010-07-26  Monty Taylor  <mordred@inaugust.com>
+
+	Removed needless continuation markers.
+
+2010-07-26  Monty Taylor  <mordred@inaugust.com>
+
+	Fixed PEP8 warnings
+
+2010-07-25  Monty Taylor  <mordred@inaugust.com>
+
+	Fixed all of the PEP8 warnings.
+
+2010-07-25  Monty Taylor  <mordred@inaugust.com>
+
+	Updated Sphinx config to match the config from Nova.
+
+2010-07-24  Monty Taylor  <mordred@inaugust.com>
+
+	Updated sphinx config to match the config from Nova.
+
+2010-07-23  Chuck Thier  <cthier@gmail.com>
+
+	Added initial cut of deployment guide and updated auth overview to better reflect the current code, with contributions from John Dickinson, Mike Barton, and Greg Holt.
+
+2010-07-23  Chuck Thier  <cthier@gmail.com>
+
+	Added first cut of the deployment guide, and updated auth overview to better
+	represent the current code
+
+2010-07-23  Brian K. Jones  <bkjones@gmail.com>
+
+	Attempted to differentiate between what a ring represents and what it is constructed of without losing the conversational tone of the document. Also added a link to the more in-depth document 'overview_ring'. More work and more links to more information need to be added, but this is my first change, and I want to be sure I'm in line with others' ideas.
+
+2010-07-23  Brian K. Jones  <bkjones@gmail.com>
+
+	Made spacing after period consistent throughout, removed a couple of spurious commas
+
+2010-07-23  Brian K. Jones  <bkjones@gmail.com>
+
+	Removed links that jumped from overview straight to module source docs.
+
+2010-07-23  Brian K. Jones  <bkjones@gmail.com>
+
+	Moved proxy server section to top, and encompassed suggested changes from cthier
+
+2010-07-22  Brian K. Jones  <bkjones@gmail.com>
+
+	Clarifying docs for The Ring, and add link to more detailed ring docs.
+
+2010-07-23  Monty Taylor  <mordred@inaugust.com>
+
+	Removes the debian/ dir to support the split trunk/packaging approach.
+
+2010-07-22  Monty Taylor  <mordred@inaugust.com>
+
+	Removed all of the tarball and debian stuff from the tree.
+
+2010-07-22  Chuck Thier  <cthier@gmail.com>
+
+	Removed test for functionality that doesn't exist any more
+
+2010-07-22  Chuck Thier  <cthier@gmail.com>
+
+	Removed tests for behavior that doesn't exist any more
+
+2010-07-22  Monty Taylor  <mordred@inaugust.com>
+
+	Made sure all the files we need are included in the tarball
+
+2010-07-22  Monty Taylor  <mordred@inaugust.com>
+
+	Fixed egg-info for PyPI
+
+2010-07-22  Monty Taylor  <mordred@inaugust.com>
+
+	Added last missing file to MANFEST.in.
+
+2010-07-21  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed a typo in the architectural notes
+
+2010-07-21  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed typo in architecture docs
+
+2010-07-20  Chuck Thier  <cthier@gmail.com>
+
+	Added getting started and architectural overview (with contributions from Mike Barton, John Dickinson and Greg Holt) to documentation.
+
+2010-07-20  Chuck Thier  <cthier@gmail.com>
+
+	another typo
+
+2010-07-20  Chuck Thier  <cthier@gmail.com>
+
+	Fixed typo
+
+2010-07-20  Chuck Thier  <cthier@gmail.com>
+
+	Added getting started documentation and architectural overview
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	fixed typo in swift-init
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	fixed typo in swift-init
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	removed install_requires from setup.py
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	removed isntall_requires from setup.py
+
+2010-07-19  Michael Shuler  <mshuler@rackspace.com>
+
+	debian packaging updates
+
+2010-07-19  Michael Shuler  <mshuler@rackspace.com>
+
+	debian packaging updates
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	refactored swift-init.do_start to handle missing config files
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	merged pull
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	refactored swift-init.do_start to handle missing config files
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	changed version of eventlet in install requires to match python-eventlet
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	updated setup.py to include install_requires
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	updated install_requires with version info
+
+2010-07-19  Clay Gerrard  <clayg@clayg-desktop>
+
+	updated install_requires in setup.py
+
+2010-07-19  Michael Barton  <michael.barton@rackspace.com>
+
+	fix for response code for unhandled exception unit test
+
+2010-07-19  Michael Barton  <michael.barton@rackspace.com>
+
+	fix for response code for unhandled exception unit test
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Updates to produce a smaller diff for bzr bd.
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Added python-sphinx to build-deps so that ppa builder doesn't die.
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Added debian/watch file.
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Add files which were not in the tarball.
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Added support for Quilt source format.
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Tagged and released 1.0.1 with missing files added back in.
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Bump tree version post-release.
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	New upstream release.
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Import upstream version 1.0.1
+
+2010-07-19  Michael Barton  <michael.barton@rackspace.com>
+
+	Fixes what I see as incorrect behavior in the proxy server -- when there's an uncaught exception in the request handler, it currently returns a 503 instead of a 500.
+
+2010-07-19  Michael Barton  <michael.barton@rackspace.com>
+
+	proxy return 500 on unhandled exceptions
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Add a MANIFEST.in file so that we can include additional needed files in the .tar.gz
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Includes a manifest file which knows how to bring along doc and etc.
+
+2010-07-19  Chuck Thier  <cthier@gmail.com>
+
+	Modified probe tests to work with setup.py develop installs
+	Updated SAIO instructions to note that probe tests will reset your environment
+	Added the swift.egg-info directory to .bzrignore
+	Updated setup.py to correctly ignore the test directory when installing
+
+2010-07-19  Chuck Thier  <cthier@gmail.com>
+
+	Updated setup.py so that the test directory would be correctly ignored when installing
+
+2010-07-19  Chuck Thier  <cthier@gmail.com>
+
+	Modified probe tests to work with setup.py develop installs
+	Updated SAIO instructions to note that probe tests will reset your environment
+	Added the swift.egg-info directory to .bzrignore
+
+2010-07-19  Monty Taylor  <mordred@inaugust.com>
+
+	Bump version to 1.0.1
+
+2010-07-18  Monty Taylor  <mordred@inaugust.com>
+
+	Bumped version number post 1.0.0 release.
+
+2010-07-19  John Dickinson  <john.dickinson@rackspace.com>
+
+	Fixed typos on the saio doc page.
+
+2010-07-18  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed a few typos in the saio docs
+
+2010-07-16  Chuck Thier  <cthier@gmail.com>
+
+	Updated docs to point to lp:swift, and added the doc/build directory to .bzrignore
+
+2010-07-16  Chuck Thier  <cthier@gmail.com>
+
+	Update .bzrignore to ignore the docs/build directory
+
+2010-07-16  Chuck Thier  <cthier@gmail.com>
+
+	Update SAIO doc to point to lp:swift
+
+2010-07-16  Monty Taylor  <mordred@inaugust.com>
+
+	Remove build-dep reference since that doesn't work yet.
+
+2010-07-16  Monty Taylor  <mordred@inaugust.com>
+
+	Fixed the doc- build-dep swift doesn't _quite_ work yet. We'll get there
+	though.
+
+2010-07-16  Monty Taylor  <mordred@inaugust.com>
+
+	Added PPA reference to the docs.
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Add reference to using PPA to get depends.
+
+2010-07-15  Chuck Thier  <cthier@gmail.com>
+
+	Updated SAIO to init the repo before branching the code
+
+2010-07-15  Chuck Thier  <cthier@gmail.com>
+
+	Marging
+
+2010-07-15  Michael Barton  <michael.barton@rackspace.com>
+
+	Make swift-init pay attention to $PATH
+
+2010-07-15  Chuck Thier  <cthier@gmail.com>
+
+	Changed README to build docs via setup.py and changed saio to run setup.py
+	with sudo.
+
+2010-07-14  gholt  <gholt@rackspace.com>
+
+	Merged
+
+2010-07-14  Chuck Thier  <cthier@gmail.com>
+
+	User login doesn't really need to be the same as the lp id in the SAIO
+
+2010-07-14  Chuck Thier  <cthier@gmail.com>
+
+	Updated saio to reflect setup.py changes 
+
+2010-07-14  gholt  <gholt@rackspace.com>
+
+	Allow specifying the proxy's auth class.
+
+2010-07-14  gholt  <gholt@rackspace.com>
+
+	SAIO doc update for the bin/*.py->bin/* change
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Added docs to doc system.
+	Updated debian packaging to dh 7 and .install files.
+	Renamed bin/ files to not have .py suffix.
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Added docs to doc system.
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Added sphinx documentation to a sphinx-doc package.
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Moved sample conf file install into docs rather than directly into etc.
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Moved things to use .install files.
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Renamed bin files in the tree so that setup.py install does the same thing
+	as a deb install.
+
+2010-07-14  Chuck Thier  <cthier@gmail.com>
+
+	Adding Monty Taylor to AUTHORS
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Updated tree to use import_dsc/import_upstream from bzr-builddeb.
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Removed PKG-INFO from the tree.
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Added support for building docs from setup.py.
+
+2010-07-14  Monty Taylor  <mordred@inaugust.com>
+
+	Merged trunk. Enabled unittests in setup.py. w00t.
+
+2010-07-13  Monty Taylor  <mordred@inaugust.com>
+
+	Merged trunk.
+
+2010-07-13  Monty Taylor  <mordred@inaugust.com>
+
+	Put in (and then comment out) hooks to run unittests via setup.py.
+
+2010-07-13  Monty Taylor  <mordred@inaugust.com>
+
+	Updated to debhelper 7 and better depends.
+
+2010-07-12  Monty Taylor  <mordred@inaugust.com>
+
+	Reverted accidental chmod -x-ing.
+
+2010-07-12  Monty Taylor  <mordred@inaugust.com>
+
+	Re-added files import-dsc didn't know about.
+
+2010-07-08  Michael Barton  <michael.barton@rackspace.com>
+
+	Initial release
+
+2010-07-08  Michael Barton  <michael.barton@rackspace.com>
+
+	Import upstream version 1.0.0
+
+2010-07-12  Monty Taylor  <mordred@inaugust.com>
+
+	Removed debian dir from the tree so we can re-add it using import-dsc.
+
+2010-07-12  Monty Taylor  <mordred@inaugust.com>
+
+	Changed to an upstream/packaging setup instead of a native package setup.
+
+2010-07-14  gholt  <gholt@rackspace.com>
+
+	Fix typo
+
+2010-07-14  gholt  <gholt@rackspace.com>
+
+	Bug fixes in docs; howto build docs in docs
+
+2010-07-13  Chuck Thier  <cthier@gmail.com>
+
+	Updated Swift All in One
+
+2010-07-13  gholt  <gholt@rackspace.com>
+
+	Make xfs-based tests optional
+
+2010-07-13  gholt  <gholt@rackspace.com>
+
+	Make unit tests not require /etc/swift/*.ring.gz files
+
+2010-07-13  John Dickinson  <john.dickinson@rackspace.com>
+
+	clarified IRC info in AUTHORS file
+
+2010-07-12  John Dickinson  <john.dickinson@rackspace.com>
+
+	fixed comma in setup.py
+
+2010-07-12  Chuck Thier  <cthier@gmail.com>
+
+	Initial commit of Swift code
+
