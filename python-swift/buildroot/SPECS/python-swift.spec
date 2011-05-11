@@ -1,3 +1,16 @@
+# Info about conditional builds:
+#
+# The logic is opposite.  A parameter listed below as 'bcond_with' will
+# not build by default, but will if '--with <param>' is passed to 
+# rpmbuild.  The oposite is true for anything listed as 'bcond_without'
+# will build by default, but can be disabled by passing '--without <param>'
+# to rpmbuild.
+#
+# See: http://www.rpm.org/wiki/PackagerDocs/ConditionalBuilds
+#
+%bcond_with tests
+
+
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
 
@@ -38,7 +51,9 @@ mkdir doc/build
 %{__python} setup.py build_sphinx
 
 %check
+%if %{with tests}
 %{__python} setup.py test
+%endif
 
 %build
 %{__python} setup.py build
